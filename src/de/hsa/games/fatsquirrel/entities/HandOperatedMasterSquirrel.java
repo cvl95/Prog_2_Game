@@ -21,6 +21,17 @@ public class HandOperatedMasterSquirrel extends PlayerEntity {
 		this.command = command;
 
 	}
+	public void createMiniSquirrel(EntityContext entCon) {
+	      //implement minisquirrel with random xy
+	      
+	      updateEnergy(-50);
+	      entCon
+	      .getEntitySet()
+	      .addEntity
+	      (new MiniSquirrel(50
+	            , getID()
+	            , new XY(getLoc().getX(), getLoc().getY())));  
+	   }
 
 	public void getStunned() {
 		stunCounter = 3;
@@ -57,7 +68,8 @@ public class HandOperatedMasterSquirrel extends PlayerEntity {
 			entityContext.tryMove(this, XY.DOWN_RIGHT);
 		else if (type == GameCommandType.STAY)
 			entityContext.tryMove(this, XY.STAY);
-
+		else if (type==GameCommandType.SPAWN_MINI)
+			   createMiniSquirrel(entityContext);
 	}
 
 	@Override

@@ -52,14 +52,7 @@ public final class XY {
 	}
 	
 	 public static int getDist(Entity entity, XY pos) {           // errechnet Distanz einer übergebenen Entity und einer Position im KOOS
-	    
-		 //TODO: sysouts and counter just for diagnosis, can be deleted
-//		 System.out.println("XY Entity ID: " + entity.getID());
-//	     System.out.println("XY pos: " + pos.x + pos.y);
-//	     System.out.println(counter);
-//	     counter++;
 		 return abs(pyth(pos.getX()-entity.getLoc().getX(),pos.getY()-entity.getLoc().getY())); 
-//	 return 5;  
 	 }
 	 
 	 public static int pyth(int a, int b) {

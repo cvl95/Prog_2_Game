@@ -104,7 +104,7 @@ public class FxUI extends Scene implements UI, ActionListener {
 					color = color.BLUE;
 					break;
 				case MiniSquirrel:
-					color = color.BLUEVIOLET;
+					color = color.BROWN;
 					break;
 				case Wall:
 					color = color.ORANGE;

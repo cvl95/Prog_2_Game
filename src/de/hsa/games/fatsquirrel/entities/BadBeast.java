@@ -27,12 +27,12 @@ public class BadBeast extends Character {
 		Entity nearestPlayer = entityContext.nearestEntity(this.getLoc(), EntityType.MasterSquirrel);
 		if(nearestPlayer==null)
 		   nearestPlayer = entityContext.nearestEntity(this.getLoc(), EntityType.HandOperatedMasterSquirrel);
-		if(waitCounter<0) {
+		if(waitCounter<3) {
 			waitCounter++;
 		}
 		else {
 	
-			if (XY.getDist(nearestPlayer, this.getLoc()) <100) {
+			if (XY.getDist(nearestPlayer, this.getLoc()) <6) {
 				XY vecToNearest = XY.getVec(nearestPlayer.getLoc(), this.getLoc());
 				//System.out.println("BadBeast.java's dir to Player:"+XY.vecToDir(vecToNearest).getX() + XY.vecToDir(vecToNearest).getY());
 				entityContext.tryMove(this,XY.vecToDir(vecToNearest));
@@ -44,7 +44,7 @@ public class BadBeast extends Character {
 	}
 
 	public void randStep(EntityContext entityContext) {
-		if(waitCounter<4) {
+		if(waitCounter<3) {
 			waitCounter++;
 		}
 		else {

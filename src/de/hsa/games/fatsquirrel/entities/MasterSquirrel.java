@@ -24,7 +24,7 @@ public class MasterSquirrel extends PlayerEntity {
 		entCon.getEntitySet().addEntity(new MiniSquirrel(50, ID, new XY(getLoc().getX(), getLoc().getY())));	
 	}
 	public void getStunned() {
-		stunCounter = 2;
+		stunCounter = 3;
 	}
 	@Override
 	public void nextStep(EntityContext entityContext) {
