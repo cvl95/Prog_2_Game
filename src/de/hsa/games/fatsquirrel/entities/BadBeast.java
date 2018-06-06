@@ -1,7 +1,11 @@
 package de.hsa.games.fatsquirrel.entities;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 import de.hsa.games.fatsquirrel.core.EntityType;
 import de.hsa.games.fatsquirrel.core.FlattenedBoard;
+import de.hsa.games.fatsquirrel.core.Launcher;
 import de.hsa.games.fatsquirrel.space.XY;
 import de.hsa.games.fatsquirrel.ui.EntityContext;
 
@@ -9,6 +13,8 @@ public class BadBeast extends Character {
 	private static final int ENERGY = -150;
 	private int byteCounter = 0;
 	private int waitCounter=1;
+   private static final Logger logger = Logger.getLogger(Launcher.class.getName());
+
 
 	static EntityType type = EntityType.BadBeast;
 
@@ -33,6 +39,7 @@ public class BadBeast extends Character {
 		else {
 	
 			if (XY.getDist(nearestPlayer, this.getLoc()) <6) {
+			   logger.log(Level.INFO, "BadBeast "+this.getID()+" starts chase");
 				XY vecToNearest = XY.getVec(nearestPlayer.getLoc(), this.getLoc());
 				//System.out.println("BadBeast.java's dir to Player:"+XY.vecToDir(vecToNearest).getX() + XY.vecToDir(vecToNearest).getY());
 				entityContext.tryMove(this,XY.vecToDir(vecToNearest));

@@ -10,7 +10,7 @@ import de.hsa.games.fatsquirrel.util.commandscanner.CommandTypeInfo;
 import de.hsa.games.fatsquirrel.util.commandscanner.GameCommandType;
 
 public class HandOperatedMasterSquirrel extends PlayerEntity {
-	private static final int energy = 1000;
+	private static final int energy = 100;
 
 	private Command command;
 	private int stunCounter;

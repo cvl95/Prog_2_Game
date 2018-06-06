@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-06-05T13:58:12.673798Z</date>
+  <millis>1528207092673</millis>
+  <nanos>798000</nanos>
+  <sequence>0</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.core.Launcher</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>BotGame launching</message>
+</record>
+<record>
+  <date>2018-06-05T13:58:24.574026800Z</date>
+  <millis>1528207104574</millis>
+  <nanos>26800</nanos>
+  <sequence>1</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
+  <method>collide</method>
+  <thread>22</thread>
+  <message>Collision Between:HandOperatedMasterSquirrel | ID 409 | Energy 100 | LOC: X 33 | LOC: Y 14 and GoodPlant | ID 407 | Energy 100 | LOC: X 33 | LOC: Y 15</message>
+</record>
+<record>
+  <date>2018-06-05T13:58:24.576091400Z</date>
+  <millis>1528207104576</millis>
+  <nanos>91400</nanos>
+  <sequence>2</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
+  <method>killAndReplace</method>
+  <thread>22</thread>
+  <message>K.I.A.: GoodPlant | ID 407 | Energy 100 | LOC: X 33 | LOC: Y 15</message>
+</record>
+</log>

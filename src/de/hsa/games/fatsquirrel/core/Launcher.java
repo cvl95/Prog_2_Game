@@ -1,5 +1,15 @@
 package de.hsa.games.fatsquirrel.core;
 
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.logging.ConsoleHandler;
+import java.util.logging.FileHandler;
+import java.util.logging.Handler;
+import java.util.logging.Level;
+import java.util.logging.LogManager;
+import java.util.logging.Logger;
+
 import de.hsa.games.fatsquirrel.botapi.BotControllerFactory;
 import de.hsa.games.fatsquirrel.botapi.TestBotFactory;
 import de.hsa.games.fatsquirrel.config.BoardConfig;
@@ -20,15 +30,10 @@ public class Launcher extends Application {
 	 */
 	private static boolean console = false;
 	private static boolean botGame = true;
-	/*
-	 * loglevel 1 = ???
-	 */
-	private static int logLevel = 1;
+	private static final Logger logger = Logger.getLogger(Launcher.class.getName());
 
-	/*
-	 * start gameimpl based on switcher above
-	 */
 	public static void main(String[] args) {
+	   initLogger();
 		if (!console) {
 		
 			if(botGame) {
@@ -36,6 +41,7 @@ public class Launcher extends Application {
 				FxUI fxUI = FxUI.createInstance(new XY(BoardConfig.FIELD_WIDTH, BoardConfig.FIELD_HEIGHT));
 				Game game = new BotGameImpl(fxUI, new TestBotFactory());
 				startGame(game);
+				logger.log(Level.INFO, "BotGame launching");
 			}
 			
 		launch(args);
@@ -44,6 +50,7 @@ public class Launcher extends Application {
 		else  {
 			 Game game = new SinglePlayerGameImpl(new ConsoleUI());
 			startGame(game);
+			logger.log(Level.INFO, "SinglePlayerGame launching");
 		
 	}
 	}
@@ -78,5 +85,20 @@ public class Launcher extends Application {
 		game.setPause(false);
 		game.gameLoopRun();
 	}
+	public static void initLogger() {
+	   InputStream ins = null;
+      Handler handler = null;
+      try {
+          ins = new FileInputStream("src/de/hsa/games/fatsquirrel/logging_conf.properties");
+          LogManager.getLogManager().readConfiguration(ins);//TODO Logfile wird nicht geladen, über logging nachvollziehen
+          handler = new FileHandler( "log.xml" );
+          logger.addHandler( handler );
+          handler = new ConsoleHandler();
+          logger.addHandler(handler);
+      } catch (SecurityException | IOException e) {
+          logger.log(Level.SEVERE, e.getMessage(), e);
+          e.printStackTrace();
+      }        
+  }
 
 }

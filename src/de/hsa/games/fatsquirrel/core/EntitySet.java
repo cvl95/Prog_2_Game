@@ -67,7 +67,6 @@ public class EntitySet {
  */
 	public void entitiesNextStep(EntityContext entityContext, Command command) {
 		for (int i = 0; i < entities.length; i++) {
-
 			if (entities[i] != null && entities[i] instanceof Character) {
 				if (entities[i] instanceof HandOperatedMasterSquirrel) 
 					((HandOperatedMasterSquirrel) entities[i]).setCommand(command);

@@ -64,6 +64,36 @@ public class MasterSquirrelBot extends MasterSquirrel {
 			// TODO Auto-generated method stub
 			return 0;
 		}
+
+      @Override
+      public XY locate() {
+         // TODO Auto-generated method stub
+         return null;
+      }
+
+      @Override
+      public boolean isMine(XY xy) {
+         // TODO Auto-generated method stub
+         return false;
+      }
+
+      @Override
+      public void implode(int impactRadius) {
+         // TODO Auto-generated method stub
+         
+      }
+
+      @Override
+      public XY directionOfMaster() {
+         // TODO Auto-generated method stub
+         return null;
+      }
+
+      @Override
+      public long getRemainingSteps() {
+         // TODO Auto-generated method stub
+         return 0;
+      }
 	}
 	
 	

@@ -17,14 +17,15 @@ import de.hsa.games.fatsquirrel.ui.EntityContext;
 
 public class FlattenedBoard implements BoardView, EntityContext {
    
-   private final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
+   private static final Logger logger = Logger.getLogger(Launcher.class.getName());
+
 
 	Board board;
 	public Entity[][] entArr;
 
 	public FlattenedBoard(Board board) {
 		this.board = board;
-
+		kill0HPEntities();
 		entArr = new Entity[board.getBoardConfig().getFieldWidth()][board.getBoardConfig().getFieldHeight()];// Entity
 																												// Array,
 																												// Entities
@@ -68,7 +69,7 @@ public class FlattenedBoard implements BoardView, EntityContext {
 		
 		if (entity instanceof MasterSquirrel || entity instanceof MiniSquirrel
 				|| entity instanceof HandOperatedMasterSquirrel) { 
-		   LOGGER.log(Level.INFO, "Collision Between:" + entity.toString()+" and " + target.toString());
+		   logger.log(Level.INFO, "Collision Between:" + entity.toString()+" and " + target.toString());
 		   // Kollision für Master/MiniSquirrel
 			switch (getMoveDirEnt(loc)) {
 			case BadBeast:
@@ -242,6 +243,7 @@ public class FlattenedBoard implements BoardView, EntityContext {
 	//
 	@Override
 	public void killAndReplace(Entity entity) { // ?! Wie kann ich eine neue Entity einfügen
+	   logger.log(Level.INFO, "K.I.A.: "+ entity.toString());
 		XY loc = XY.getRndFreePos(board.getEntitySet(), board.getBoardConfig());
 		switch (entity.getEntityType()) {
 		case BadBeast:
@@ -262,20 +264,25 @@ public class FlattenedBoard implements BoardView, EntityContext {
 			break;
 		default:
 			break;
-			
-
 		}
 
 	}
+	public void kill(Entity entity) {
+	   logger.log(Level.INFO, "K.I.A.: "+ entity.toString());
+	   board.getEntitySet().deleteEntity(entity);
+	}
 
-//	public void kill0HPEntities() {
-//		
-//		
-//		for (int i = 0; i < board.getEntitySet(); i++) {
-//			
-//		}
-//		
-//	}
+	public void kill0HPEntities() {
+		
+		Entity entities[]=board.getEntitySet().getEntityArray();	
+		for (int i = 0; i < entities.length; i++) {
+		   if(entities[i]!=null)
+		      if(entities[i] instanceof HandOperatedMasterSquirrel)
+		         if(entities[i].getEnergy()<=0) 
+		            board.getEntitySet().deleteEntity(entities[i]);
+		}
+		
+	}
 	
 	
 	@Override
@@ -299,21 +306,10 @@ public class FlattenedBoard implements BoardView, EntityContext {
 	
 		return board.getEntitySet();
 	}
-
-	@Override
-	public void kill(Entity entity) {
-	   board.getEntitySet().deleteEntity(entity);
-	}
-
 	@Override
 	public FlattenedBoard getflattenedboard() {
 		
 		return this;
 	}
-
-	// @Override
-	// public XY getMoveCommand() {
-	// return null;
-	// }
 
 }

@@ -17,7 +17,6 @@ public abstract class Game {
 	EntityContext entityContext;
 	private final int FPS = 20;
 	private boolean pause;
-
 	public Game(UI ui, BoardConfig boardConfig) {
 		this.ui = ui;
 		this.boardConfig = boardConfig;
@@ -40,25 +39,23 @@ public abstract class Game {
 		if (!pause)
 			state.update(board.flatten(), command);
 	}
+	
+	
 
 	public void gameLoopRun() {
 		Thread gameLoopThread = new Thread(() -> {
 			while (true) {
 				BoardView boardView = board.getBoardView();
 				try {
-					Thread.sleep((long) (1 / (double) FPS * 10000));
+					Thread.sleep((long) (1 / (double) FPS * 5000));
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
 				render(boardView);
 				update();
 				roundCounter++;
-			}
-		});
-		Thread inputLoop = new Thread(() -> {
-			while (true) {
 				try {
-					Thread.sleep((long) (1 / (double) FPS * 10000));
+					Thread.sleep((long) (1 / (double) FPS * 5000));
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
@@ -66,7 +63,7 @@ public abstract class Game {
 			}
 		});
 		gameLoopThread.start();
-		inputLoop.start();
+
 	}
 
 	public boolean getPause() {
