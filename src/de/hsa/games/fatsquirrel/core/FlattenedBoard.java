@@ -1,5 +1,8 @@
 package de.hsa.games.fatsquirrel.core;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -22,10 +25,13 @@ public class FlattenedBoard implements BoardView, EntityContext {
 
 	Board board;
 	public Entity[][] entArr;
-
+	private EntitySet set;
+	private Iterator<Entity> iterator;
+	private int counter = 0;
+	private Entity tmp;
 	public FlattenedBoard(Board board) {
 		this.board = board;
-		kill0HPEntities();
+//		kill0HPEntities();
 		entArr = new Entity[board.getBoardConfig().getFieldWidth()][board.getBoardConfig().getFieldHeight()];// Entity
 																												// Array,
 																												// Entities
@@ -38,11 +44,18 @@ public class FlattenedBoard implements BoardView, EntityContext {
 																												// Array
 																												// abgespeichert
 
-		for (int i = 0; i < board.getEntitySet().getEntityArray().length -1; i++) {
-			if (board.getEntitySet().getEntityArray()[i] != null)
-			entArr[board.getEntitySet().getEntityArray()[i].getLoc().getX()][board.getEntitySet().getEntityArray()[i].getLoc().getY()] = board.getEntitySet().getEntityArray()[i];
-			// Array wird mit Entities an richtiger Position befüllt
-		}
+//		for (int i = 0; i < board.getEntitySet().getEntityArray().length -1; i++) {
+//			if (board.getEntitySet().getEntityArray()[i] != null)
+//			entArr[board.getEntitySet().getEntityArray()[i].getLoc().getX()][board.getEntitySet().getEntityArray()[i].getLoc().getY()] = board.getEntitySet().getEntityArray()[i];
+//			// Array wird mit Entities an richtiger Position befüllt
+		
+		 set = board.getEntitySet();
+		 iterator = set.getEntityList().iterator();
+		 while(iterator.hasNext()) {
+			tmp = iterator.next();
+			 entArr[tmp.getLoc().getX()][tmp.getLoc().getY()] = tmp;
+			 counter++;
+		 }
 	}
 
 	@Override
@@ -147,6 +160,7 @@ public class FlattenedBoard implements BoardView, EntityContext {
 	}
 
 	public void tryMove(Entity entity, XY moveDirection) {
+		System.out.println("TryMove FlattenedBoard entity: " + entity.toString());
 		int posY = entity.getLoc().addVec(moveDirection).getY();
 		int posX = entity.getLoc().addVec(moveDirection).getX();
 		if (posX < entArr.length && posY < entArr[1].length && posX >= 0 && posY >= 0) { // überprüft ob
@@ -193,17 +207,27 @@ public class FlattenedBoard implements BoardView, EntityContext {
 	@Override
 	//TODO: Problems regarding multiple HandOperated and their distance i think...
 	public Entity nearestPlayerEntity(XY pos) { // gibt mir die näheste Player-Entity zurück
-		
+
 		Entity[] players = new Entity[board.getBoardConfig().getMasterSquirrel() ];
 		int k = 0;
-		for (int j = 0; j < board.getEntitySet().getEntityArray().length - 1; j++) {
-			if (board.getEntitySet().getEntityArray()[j] != null) {
-				if (board.getEntitySet().getEntityArray()[j] instanceof MasterSquirrel) { //.getEntityType() == EntityType.MasterSquirrel) {
-					players[k] = board.getEntitySet().getEntityArray()[j]; //Befüllt Entity Array players mit HoMS
-					k++;
-				}
+		
+		set =  board.getEntitySet();
+		iterator = set.getEntityList().iterator();
+		while (iterator.hasNext()) {
+			tmp = iterator.next();
+			if (tmp instanceof MasterSquirrel) {
+				players[k] = tmp;
+				k++;
 			}
 		}
+//		for (int j = 0; j < board.getEntitySet().getEntityArray().length - 1; j++) {
+//			if (board.getEntitySet().getEntityArray()[j] != null) {
+//				if (board.getEntitySet().getEntityArray()[j] instanceof MasterSquirrel) { //.getEntityType() == EntityType.MasterSquirrel) {
+//					players[k] = board.getEntitySet().getEntityArray()[j]; //Befüllt Entity Array players mit HoMS
+//					k++;
+//				}
+//			}
+//		}
 		Entity nearest = null;
 
 		int dist = XY.pyth(board.getBoardConfig().getFieldWidth(), board.getBoardConfig().getFieldHeight());
@@ -219,14 +243,35 @@ public class FlattenedBoard implements BoardView, EntityContext {
 		
 		Entity[] players = new Entity[100];
 		int k = 0;
-		for (int j = 0; j < board.getEntitySet().getEntityArray().length - 1; j++) {
-			if (board.getEntitySet().getEntityArray()[j] != null) {
-				if (board.getEntitySet().getEntityArray()[j].getEntityType() == type) {
-					players[k] = board.getEntitySet().getEntityArray()[j]; //Befüllt Entity Array players mit HoMS
-					k++;
-				}
+		
+//		 set = (List<Entity>) board.getEntitySet();
+//		 iterator = set.iterator();
+//		 while(iterator.hasNext()) {
+//			tmp = iterator.next();
+//			 entArr[tmp.getLoc().getX()][tmp.getLoc().getY()] = tmp;
+//			 counter++;
+		
+		set = board.getEntitySet();
+		iterator = set.getEntityList().iterator();
+		
+		while(iterator.hasNext()) {
+			tmp = iterator.next();
+			
+			if(tmp.getEntityType() == type) {
+				players[k] = tmp;
+				k++;
 			}
 		}
+		
+		
+//		for (int j = 0; j < board.getEntitySet().getEntityArray().length - 1; j++) {
+//			if (board.getEntitySet().getEntityArray()[j] != null) {
+//				if (board.getEntitySet().getEntityArray()[j].getEntityType() == type) {
+//					players[k] = board.getEntitySet().getEntityArray()[j]; //Befüllt Entity Array players mit HoMS
+//					k++;
+//				}
+//			}
+//		}
 		Entity nearest = null;
 
 		int dist = XY.pyth(board.getBoardConfig().getFieldWidth(), board.getBoardConfig().getFieldHeight());
@@ -274,13 +319,26 @@ public class FlattenedBoard implements BoardView, EntityContext {
 
 	public void kill0HPEntities() {
 		
-		Entity entities[]=board.getEntitySet().getEntityArray();	
-		for (int i = 0; i < entities.length; i++) {
-		   if(entities[i]!=null)
-		      if(entities[i] instanceof HandOperatedMasterSquirrel)
-		         if(entities[i].getEnergy()<=0) 
-		            board.getEntitySet().deleteEntity(entities[i]);
+		set =  board.getEntitySet();
+		iterator = set.getEntityList().iterator();
+		
+		while(iterator.hasNext()) {
+			tmp = iterator.next();
+			if(tmp instanceof HandOperatedMasterSquirrel) {
+				if (tmp.getEnergy() <= 0)
+					set.getEntityList().remove(tmp);
+			}
 		}
+		
+		
+		
+//		Entity entities[]=board.getEntitySet().getEntityArray();	
+//		for (int i = 0; i < entities.length; i++) {
+//		   if(entities[i]!=null)
+//		      if(entities[i] instanceof HandOperatedMasterSquirrel)
+//		         if(entities[i].getEnergy()<=0) 
+//		            board.getEntitySet().deleteEntity(entities[i]);
+//		}
 		
 	}
 	
@@ -302,9 +360,9 @@ public class FlattenedBoard implements BoardView, EntityContext {
 	}
 
 	@Override
-	public EntitySet getEntitySet() {
+	public List<Entity> getEntitySet() {
 	
-		return board.getEntitySet();
+		return (List<Entity>) set;
 	}
 	@Override
 	public FlattenedBoard getflattenedboard() {

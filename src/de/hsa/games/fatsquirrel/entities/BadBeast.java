@@ -28,7 +28,7 @@ public class BadBeast extends Character {
 	}
 
 	public void nextStep(EntityContext entityContext) {	
-	//TODO: Fix behavior
+
 		
 		Entity nearestPlayer = entityContext.nearestEntity(this.getLoc(), EntityType.MasterSquirrel);
 		if(nearestPlayer==null)

@@ -1,6 +1,7 @@
 package de.hsa.games.fatsquirrel.core;
 
 import de.hsa.games.fatsquirrel.config.BoardConfig;
+import de.hsa.games.fatsquirrel.gameimpl.BotGameImpl;
 import de.hsa.games.fatsquirrel.ui.BoardView;
 import de.hsa.games.fatsquirrel.ui.EntityContext;
 import de.hsa.games.fatsquirrel.ui.UI;

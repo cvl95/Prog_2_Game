@@ -4,21 +4,6 @@ import de.hsa.games.fatsquirrel.core.EntityType;
 import de.hsa.games.fatsquirrel.space.XY;
 
 public interface ControllerContext {
-
-//	public XY getViewLowerLeft();
-//	public XY getViewUpperRight();
-//	public EntityType getEntityAt(XY xy);
-//	public void move(XY direction);
-//	public void spawnMiniBot(XY direction, int energy);
-//	public int getEnergy();
-//	
-//	
-//	
-//}
-   /**
-    * 
-    * @return lower left corner of the view rectangle 
-    */
    XY getViewLowerLeft();
 
    /**

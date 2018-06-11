@@ -9,7 +9,6 @@ public class TestBotFactory implements BotControllerFactory{
 
 	@Override
 	public BotController createMiniBotController() {
-		// TODO Auto-generated method stub
 		return new TestBot();
 	}
 

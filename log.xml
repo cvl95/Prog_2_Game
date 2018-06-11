@@ -2,39 +2,51 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2018-06-05T13:58:12.673798Z</date>
-  <millis>1528207092673</millis>
-  <nanos>798000</nanos>
+  <date>2018-06-10T21:44:53.789046100Z</date>
+  <millis>1528667093789</millis>
+  <nanos>46100</nanos>
   <sequence>0</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.core.Launcher</class>
-  <method>main</method>
-  <thread>1</thread>
-  <message>BotGame launching</message>
-</record>
-<record>
-  <date>2018-06-05T13:58:24.574026800Z</date>
-  <millis>1528207104574</millis>
-  <nanos>26800</nanos>
-  <sequence>1</sequence>
   <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
   <level>INFO</level>
   <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
   <method>collide</method>
-  <thread>22</thread>
-  <message>Collision Between:HandOperatedMasterSquirrel | ID 409 | Energy 100 | LOC: X 33 | LOC: Y 14 and GoodPlant | ID 407 | Energy 100 | LOC: X 33 | LOC: Y 15</message>
+  <thread>21</thread>
+  <message>Collision Between:HandOperatedMasterSquirrel | ID 204 | Energy 100 | LOC: X 44 | LOC: Y 18 and GoodPlant | ID 200 | Energy 100 | LOC: X 45 | LOC: Y 18</message>
 </record>
 <record>
-  <date>2018-06-05T13:58:24.576091400Z</date>
-  <millis>1528207104576</millis>
-  <nanos>91400</nanos>
-  <sequence>2</sequence>
+  <date>2018-06-10T21:44:53.914656200Z</date>
+  <millis>1528667093914</millis>
+  <nanos>656200</nanos>
+  <sequence>1</sequence>
   <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
   <level>INFO</level>
   <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
   <method>killAndReplace</method>
-  <thread>22</thread>
-  <message>K.I.A.: GoodPlant | ID 407 | Energy 100 | LOC: X 33 | LOC: Y 15</message>
+  <thread>21</thread>
+  <message>K.I.A.: GoodPlant | ID 200 | Energy 100 | LOC: X 45 | LOC: Y 18</message>
+</record>
+<record>
+  <date>2018-06-10T21:45:03.955546500Z</date>
+  <millis>1528667103955</millis>
+  <nanos>546500</nanos>
+  <sequence>2</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
+  <method>collide</method>
+  <thread>21</thread>
+  <message>Collision Between:HandOperatedMasterSquirrel | ID 204 | Energy 200 | LOC: X 45 | LOC: Y 13 and GoodPlant | ID 205 | Energy 100 | LOC: X 45 | LOC: Y 12</message>
+</record>
+<record>
+  <date>2018-06-10T21:45:03.957549600Z</date>
+  <millis>1528667103957</millis>
+  <nanos>549600</nanos>
+  <sequence>3</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
+  <method>killAndReplace</method>
+  <thread>21</thread>
+  <message>K.I.A.: GoodPlant | ID 205 | Energy 100 | LOC: X 45 | LOC: Y 12</message>
 </record>
 </log>

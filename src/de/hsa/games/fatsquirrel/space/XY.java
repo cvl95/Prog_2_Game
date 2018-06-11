@@ -5,6 +5,7 @@ import static java.lang.Math.*;
 
 import de.hsa.games.fatsquirrel.config.BoardConfig;
 import de.hsa.games.fatsquirrel.core.EntitySet;
+import de.hsa.games.fatsquirrel.core.EntitySet_old;
 import de.hsa.games.fatsquirrel.entities.Entity;
 import de.hsa.games.fatsquirrel.entities.HandOperatedMasterSquirrel;
 
@@ -23,7 +24,6 @@ public final class XY {
 	public static final XY STAY = new XY(0,0);
 
 	public XY(int x, int y) {
-		// TODO - implement XY.XY
 		this.x = x;
 		this.y = y;
 

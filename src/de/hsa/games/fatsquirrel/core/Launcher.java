@@ -10,7 +10,6 @@ import java.util.logging.Level;
 import java.util.logging.LogManager;
 import java.util.logging.Logger;
 
-import de.hsa.games.fatsquirrel.botapi.BotControllerFactory;
 import de.hsa.games.fatsquirrel.botapi.TestBotFactory;
 import de.hsa.games.fatsquirrel.config.BoardConfig;
 import de.hsa.games.fatsquirrel.gameimpl.BotGameImpl;
@@ -25,38 +24,41 @@ import javafx.stage.WindowEvent;
 
 public class Launcher extends Application {
 	/**
-	 * switcher between console-mode or fx-mode
-	 * switcher between botGame or Handoperated
+	 * switcher between console-mode or fx-mode switcher between botGame or
+	 * Handoperated
 	 */
 	private static boolean console = false;
 	private static boolean botGame = true;
 	private static final Logger logger = Logger.getLogger(Launcher.class.getName());
 
 	public static void main(String[] args) {
-	   initLogger();
+		initLogger();
+
 		if (!console) {
-		
-			if(botGame) {
-				
+
+			if (botGame) {
+
 				FxUI fxUI = FxUI.createInstance(new XY(BoardConfig.FIELD_WIDTH, BoardConfig.FIELD_HEIGHT));
 				Game game = new BotGameImpl(fxUI, new TestBotFactory());
 				startGame(game);
 				logger.log(Level.INFO, "BotGame launching");
+
 			}
-			
-		launch(args);
+			launch(args);
+
 		}
-		
-		else  {
-			 Game game = new SinglePlayerGameImpl(new ConsoleUI());
-			startGame(game);
+
+		else {
+			Game game = new SinglePlayerGameImpl(new ConsoleUI());
 			logger.log(Level.INFO, "SinglePlayerGame launching");
-		
+			startGame(game);
+
+		}
 	}
-	}
+
 	/*
-	 * javaFX 
-	 * (non-Javadoc)
+	 * javaFX (non-Javadoc)
+	 * 
 	 * @see javafx.application.Application#start(javafx.stage.Stage)
 	 */
 	@Override
@@ -78,27 +80,30 @@ public class Launcher extends Application {
 
 		startGame(game);
 	}
-/*
- * starter for the gameLoop
- */
+
+	/*
+	 * starter for the gameLoop
+	 */
 	private static void startGame(Game game) {
 		game.setPause(false);
 		game.gameLoopRun();
 	}
+
 	public static void initLogger() {
-	   InputStream ins = null;
-      Handler handler = null;
-      try {
-          ins = new FileInputStream("src/de/hsa/games/fatsquirrel/logging_conf.properties");
-          LogManager.getLogManager().readConfiguration(ins);//TODO Logfile wird nicht geladen, über logging nachvollziehen
-          handler = new FileHandler( "log.xml" );
-          logger.addHandler( handler );
-          handler = new ConsoleHandler();
-          logger.addHandler(handler);
-      } catch (SecurityException | IOException e) {
-          logger.log(Level.SEVERE, e.getMessage(), e);
-          e.printStackTrace();
-      }        
-  }
+		InputStream ins = null;
+		Handler handler = null;
+		try {
+			ins = new FileInputStream("src/de/hsa/games/fatsquirrel/logging_conf.properties");
+			LogManager.getLogManager().readConfiguration(ins);// TODO Logfile wird nicht geladen, über logging
+																// nachvollziehen
+			handler = new FileHandler("log.xml");
+			logger.addHandler(handler);
+			handler = new ConsoleHandler();
+			logger.addHandler(handler);
+		} catch (SecurityException | IOException e) {
+			logger.log(Level.SEVERE, e.getMessage(), e);
+			e.printStackTrace();
+		}
+	}
 
 }

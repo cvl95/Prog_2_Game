@@ -22,6 +22,7 @@ public class GoodBeast extends Character {
 	
 	public void nextStep(EntityContext entityContext) {
 		//TODO Wechselnde Instanzen vom MS/HOMS im Entity Array von Board, übergeben in entity Context 
+		System.out.println("GoodBeast nextStep");
 		Entity nearestPlayer = entityContext.nearestEntity(this.getLoc(), EntityType.MasterSquirrel);
 		if(nearestPlayer==null)
          nearestPlayer = entityContext.nearestEntity(this.getLoc(), EntityType.HandOperatedMasterSquirrel);
@@ -32,7 +33,6 @@ public class GoodBeast extends Character {
 		else {
 			if(XY.getDist(nearestPlayer, this.getLoc()) < 100) {
 				XY vecToNearest = XY.getVec(this.getLoc(), nearestPlayer.getLoc());
-	         //System.out.println("GoodBeast.java's dir to Player:"+XY.vecToDir(vecToNearest).getX() + XY.vecToDir(vecToNearest).getY());
 	         entityContext.tryMove(this, XY.vecToDir(vecToNearest));
 			} else
 				entityContext.tryMove(this,  XY.invertVec(this.getLoc().addVec(XY.genVecfromRand())));

@@ -29,6 +29,13 @@ public class Command{
     public CommandTypeInfo getCommandType() {
         return this.info;
     }
+    
+    @Override
+    public String toString() {
+    	String a ="";
+    	a += "Beschreibung: " + this.beschreibung + "Name: " + this.name + "CommandType: " + this.getCommandType();
+    	return a;
+    }
    
    
 }

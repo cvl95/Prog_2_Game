@@ -1,148 +1,118 @@
 package de.hsa.games.fatsquirrel.core;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.concurrent.CopyOnWriteArrayList;
+
+import de.hsa.games.fatsquirrel.entities.Character;
+
+import de.hsa.games.fatsquirrel.entities.BadBeast;
+import de.hsa.games.fatsquirrel.entities.BadPlant;
 import de.hsa.games.fatsquirrel.entities.Entity;
+import de.hsa.games.fatsquirrel.entities.GoodBeast;
+import de.hsa.games.fatsquirrel.entities.GoodPlant;
 import de.hsa.games.fatsquirrel.entities.HandOperatedMasterSquirrel;
 import de.hsa.games.fatsquirrel.entities.MasterSquirrel;
 import de.hsa.games.fatsquirrel.space.XY;
 import de.hsa.games.fatsquirrel.ui.EntityContext;
 import de.hsa.games.fatsquirrel.util.commandscanner.Command;
-import de.hsa.games.fatsquirrel.entities.Character;
 
 public class EntitySet {
 
-	private final int maxEntity = 1000;
-	// Entityarray
-	private Entity[] entities;
-/**
- * generate Entityarray
- */
-	public EntitySet() {
-		entities = new Entity[maxEntity];
+	private List<Entity> set;
+
+	EntitySet() {
+		set = new CopyOnWriteArrayList<>();
 	}
-/**
- * Add Entity to next free pos in array
- * @param entity
- */
+
 	public void addEntity(Entity entity) {
-		for (int i = 0; i < entities.length; i++) {
-			if (entities[i] == null) {
-				entities[i] = entity;
-				break;
-			}
-		}
+		set.add(entity);
 	}
-/**
- * delete Entity from array
- * @param entity
- */
+
 	public void deleteEntity(Entity entity) {
-		for (int i = 0; i < entities.length; i++) {
-			if (entities[i] != null && entities[i].getID() == entity.getID()) {
-				entities[i] = null;
-				break;
-			}
-		}
+		set.remove(entity);
 	}
-/**
- * Delete Entity from ID
- * @param id
- */
-	public void deleteEntityFromID(int id) {
-		System.out.println("deleteentityfromid" + id);
 
-		
-		for (int i = 0; i < entities.length; i++) {
-			System.out.println(entities[i].getID());
-			if (entities[i].getID() == id) {
-				System.out.println(entities[i].getID() + id);
-				entities[i] = null;	
-				break;
-			}
-	}
-	}
-/**
- * Call the nextstep method from every Entity that is an instace of 
- * Character
- * @param entityContext
- */
 	public void entitiesNextStep(EntityContext entityContext, Command command) {
-		for (int i = 0; i < entities.length; i++) {
-			if (entities[i] != null && entities[i] instanceof Character) {
-				if (entities[i] instanceof HandOperatedMasterSquirrel) 
-					((HandOperatedMasterSquirrel) entities[i]).setCommand(command);
-				if(entities[i] instanceof MasterSquirrel) 
-				   ((MasterSquirrel) entities[i]).setCommand(command);	
-				((Character) entities[i]).nextStep(entityContext);
+		System.out.println("EntitySet nextStep");
+		Iterator<Entity> iterator = set.iterator();
+		Entity tmp;
+		
+		while (iterator.hasNext()) {
+			tmp = iterator.next();
+			
+			if (tmp instanceof Character) {
+			
+				if(tmp instanceof MasterSquirrelBot) {
+					((MasterSquirrelBot)tmp).nextStep(entityContext);					
+				}
+				if(tmp instanceof HandOperatedMasterSquirrel) {
+					((HandOperatedMasterSquirrel)tmp).setCommand(command);
+				}
+				((Character)tmp).nextStep(entityContext);
 				
-			}
-
+			}		
 		}
+		
+		
+//		while (iterator.hasNext()) {
+//			tmp = iterator.next();
+//			System.out.println(tmp.toString());
+//			if (tmp instanceof Character) {
+//				System.out.println("EntitySet instanceof Character");
+//				if (tmp instanceof HandOperatedMasterSquirrel) {
+//					System.out.println("EntitySet instanceof Character.Handoperated");
+////					System.out.println(tmp.toString());
+//					if (command != null)
+//						System.out.println(command.toString());
+//					if (tmp instanceof MasterSquirrel && !(tmp instanceof MasterSquirrelBot)) {
+//						System.out.println("EntitySet Instanceof master/bot");
+//
+//						((MasterSquirrel) tmp).setCommand(command);
+//					}
+//					System.out.println("Entityset nextstep character all");
+//					((Character) tmp).nextStep(entityContext);
+//				}
+//			}
+//
+//		}
 	}
-/**
- * search and return Entity of type Handoperatedmaster
- * @return
- */
-	public HandOperatedMasterSquirrel getHandOperatedMaster() {
-		for (int i = 0; i < entities.length; i++) {
-			if (entities[i] != null && entities[i].getEntityType() == EntityType.HandOperatedMasterSquirrel)
-				return (HandOperatedMasterSquirrel) entities[i];
-		}
-		return null;
-	}
-	/**
-	 * return entity from ID
-	 * @param ID
-	 * @return
-	 */
-	public Entity getEntity(int ID) {
-		for (int i = 0; i < entities.length; i++) {
-			if (entities[i].getID() == ID) {
-				return entities[i];
-			}
-		}
 
-		return null;
-	}
-	
-	
-
-/**
- * check if given position is a free position
- * @param xy
- * @return
- */
 	public boolean checkPosFree(XY xy) {
-		for (int i = 0; i < entities.length; i++) {
-			if (entities[i] == null)
+		Iterator<Entity> iterator = set.iterator();
+		Entity tmp;
+		while (iterator.hasNext()) {
+			tmp = iterator.next();
+			if (tmp == null)
 				break;
-			else if (xy.getX() == entities[i].getLoc().getX() && xy.getY() == entities[i].getLoc().getY()) {
+			else if (xy.getX() == tmp.getLoc().getX() && xy.getY() == tmp.getLoc().getY())
 				return false;
-			}
 
 		}
 		return true;
 	}
-/**
- * getter entity array
- * @return
- */
-	public Entity[] getEntityArray() {
-		return entities;
+
+	public Object[] getEntityArray() {
+		return set.toArray();
 	}
-/**
- * to-string
- */
+
+	public List<Entity> getEntityList() {
+		return this.set;
+	}
+
 	@Override
 	public String toString() {
+		Iterator<Entity> iterator = set.iterator();
+		Entity tmp;
+		int counter = 0;
 		String a = "";
 
-		for (int i = 0; i < entities.length; i++) {
-
-			if (entities[i] != null) {
-				a += "EntitySet " + i + " |ID " + entities[i].getID() + " | Energy " + entities[i].getEnergy()
-						+ " | LOC: X " + entities[i].getLoc().getX() + " | LOC: Y " + entities[i].getLoc().getY()
-						+ "\r";
-			}
+		while (iterator.hasNext()) {
+			tmp = iterator.next();
+			a += "EntitySet " + counter + " |ID " + tmp.getID() + " | Energy " + tmp.getEnergy() + " | LOC: X "
+					+ tmp.getLoc().getX() + " | LOC: Y " + tmp.getLoc().getY() + "\r";
+			counter++;
 		}
 		return a;
 	}

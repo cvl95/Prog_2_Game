@@ -1,6 +1,8 @@
 package de.hsa.games.fatsquirrel.ui;
 
-import de.hsa.games.fatsquirrel.core.EntitySet;
+import java.util.List;
+
+import de.hsa.games.fatsquirrel.core.EntitySet_old;
 import de.hsa.games.fatsquirrel.core.EntityType;
 import de.hsa.games.fatsquirrel.core.FlattenedBoard;
 import de.hsa.games.fatsquirrel.entities.Entity;
@@ -18,7 +20,7 @@ public interface EntityContext {
 	public Entity nearestPlayerEntity(XY pos);
 	public Entity nearestEntity(XY pos, EntityType type);
 	public FlattenedBoard flatten();
-	public EntitySet getEntitySet();
+	public List<Entity> getEntitySet();
 	
 	
 	public void kill(Entity entity);

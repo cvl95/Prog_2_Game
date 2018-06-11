@@ -1,5 +1,8 @@
 package de.hsa.games.fatsquirrel.core;
 
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
+import de.hsa.games.fatsquirrel.botapi.BotController;
 import de.hsa.games.fatsquirrel.botapi.ControllerContext;
 import de.hsa.games.fatsquirrel.entities.MasterSquirrel;
 import de.hsa.games.fatsquirrel.space.XY;
@@ -7,96 +10,114 @@ import de.hsa.games.fatsquirrel.ui.EntityContext;
 
 public class MasterSquirrelBot extends MasterSquirrel {
 
-	ControllerContext context;
-	
-	
-//	public MasterSquirrelBot(XY loc) {
-//		super(loc, EntityType.HandOperatedMasterSquirrel);
-//		
-//	
-//	
-//	}
-	
-	public MasterSquirrelBot(XY xy) {
-		super(xy, EntityType.HandOperatedMasterSquirrel);	}
+	private ControllerContext controllerContext;
+	private BotController controller;
+	// private final BotController controllerContext;
+
+	public MasterSquirrelBot(XY xy, BotController controller) {
+		super(xy, EntityType.HandOperatedMasterSquirrel);
+		this.controller = controller;
+	}
+
+	private ControllerContext getControllerContext(EntityContext entityContext) {
+		if (controllerContext == null) {
+			ControllerContextImpl controllerContext = new ControllerContextImpl(entityContext);
+
+		}
+		return controllerContext;
+	}
 
 	@Override
 	public void nextStep(EntityContext entityContext) {
 		System.out.println("MasterSquirrelBot Nextstep");
+		// entityContext.tryMove(this, XY.RIGHT);
+	
+		// cci = getControllerContext(entityContext);
+		controller.nextStep(new ControllerContextImpl(entityContext));
+		
 	}
-	public class ControllerContextimpl implements ControllerContext{
-		public ControllerContextimpl() {
-			
+
+	public class ControllerContextImpl implements ControllerContext {
+
+		private final EntityContext ENTITYCONTEXT;
+		private final int MAXSIGHT = 15;
+
+		ControllerContextImpl(EntityContext entityContext) {
+			ENTITYCONTEXT = entityContext;
 		}
 
 		@Override
 		public XY getViewLowerLeft() {
-			// TODO Auto-generated method stub
-			return null;
+			return new XY(0, ENTITYCONTEXT.getSize().getY());
 		}
 
 		@Override
 		public XY getViewUpperRight() {
-			// TODO Auto-generated method stub
-			return null;
+			return new XY(ENTITYCONTEXT.getSize().getX(), 0);
 		}
 
 		@Override
 		public EntityType getEntityAt(XY xy) {
-			// TODO Auto-generated method stub
-			return null;
+			XY myPos = MasterSquirrelBot.this.getLoc();
+			XY delta = myPos.getVec(myPos, xy);
+
+			// TODO: Throw exception
+			if (!inBounds(delta))
+				System.out.println("outOufBounds");
+
+			return ENTITYCONTEXT.getEntityType(xy);
+		}
+
+		private boolean inBounds(XY delta) {
+			int dx = Math.abs(delta.getX());
+			int dy = delta.getY();
+			return dx <= MAXSIGHT && dy <= MAXSIGHT;
 		}
 
 		@Override
 		public void move(XY direction) {
-			// TODO Auto-generated method stub
-			
+			ENTITYCONTEXT.tryMove(MasterSquirrelBot.this, direction);
 		}
 
 		@Override
 		public void spawnMiniBot(XY direction, int energy) {
-			// TODO Auto-generated method stub
-			
+			spawnMiniBot(direction, energy);
 		}
 
 		@Override
 		public int getEnergy() {
-			// TODO Auto-generated method stub
-			return 0;
+			return MasterSquirrelBot.this.getEnergy();
 		}
 
-      @Override
-      public XY locate() {
-         // TODO Auto-generated method stub
-         return null;
-      }
+		@Override
+		public XY locate() {
+			return null;
+		}
 
-      @Override
-      public boolean isMine(XY xy) {
-         // TODO Auto-generated method stub
-         return false;
-      }
+		@Override
+		public boolean isMine(XY xy) {
+			if (getEntityAt(xy) == EntityType.MiniSquirrel)
+				return true;
+			return false;
+		}
 
-      @Override
-      public void implode(int impactRadius) {
-         // TODO Auto-generated method stub
-         
-      }
+		@Override
+		public void implode(int impactRadius) {
+			// TODO implement Implode
 
-      @Override
-      public XY directionOfMaster() {
-         // TODO Auto-generated method stub
-         return null;
-      }
+		}
 
-      @Override
-      public long getRemainingSteps() {
-         // TODO Auto-generated method stub
-         return 0;
-      }
+		@Override
+		public XY directionOfMaster() {
+			//TODO Implement directionOfMaster
+			return null;
+		}
+
+		@Override
+		public long getRemainingSteps() {
+			//TODO Implement getRemainingSteps
+			return 0;
+		}
 	}
-	
-	
-	
-	
+
 }

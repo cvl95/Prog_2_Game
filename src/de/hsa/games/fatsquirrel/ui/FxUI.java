@@ -32,7 +32,7 @@ public class FxUI extends Scene implements UI, ActionListener {
 	private Canvas boardCanvas;
 	private Label msgLabel;
 	private static final int CELL_SIZE = 16;
-	private static String keyCode = "stay";
+	private static String keyCode = "stay"; // saved last input
 
 	public FxUI(Parent parent, Canvas boardCanvas, Label msgLabel) {
 		super(parent);
@@ -56,7 +56,10 @@ public class FxUI extends Scene implements UI, ActionListener {
 				KeyCode code = keyEvent.getCode();
 				setCommand(code);
 			}
-
+			/**
+			 * setter for last fetched input
+			 * @param code
+			 */
 			private void setCommand(KeyCode code) {
 				keyCode = code.toString();
 			}
@@ -133,7 +136,7 @@ public class FxUI extends Scene implements UI, ActionListener {
 	}
 
 	@Override
-	public Command getCommand() {	
+	public Command getCommand() {
 		Command newCommand;
 		CommandScanner comScan = new CommandScanner(GameCommandType.values(),
 				new BufferedReader(new InputStreamReader(System.in)));
@@ -143,9 +146,6 @@ public class FxUI extends Scene implements UI, ActionListener {
 
 	@Override
 	public void actionPerformed(ActionEvent arg0) {
-		
 
 	}
 }
-
-

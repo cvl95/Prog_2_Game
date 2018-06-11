@@ -21,7 +21,8 @@ public class MasterSquirrel extends PlayerEntity {
 		//implement minisquirrel with random xy
 		
 		updateEnergy(-50);
-		entCon.getEntitySet().addEntity(new MiniSquirrel(50, ID, new XY(getLoc().getX(), getLoc().getY())));	
+		
+		entCon.getEntitySet().add(new MiniSquirrel(50, ID, new XY(getLoc().getX(), getLoc().getY())));	
 	}
 	public void getStunned() {
 		stunCounter = 3;
