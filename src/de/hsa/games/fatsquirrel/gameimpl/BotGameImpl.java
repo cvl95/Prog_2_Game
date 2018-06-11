@@ -9,12 +9,13 @@ import de.hsa.games.fatsquirrel.core.Game;
 import de.hsa.games.fatsquirrel.core.MasterSquirrelBot;
 import de.hsa.games.fatsquirrel.entities.Entity;
 import de.hsa.games.fatsquirrel.entities.MasterSquirrel;
+import de.hsa.games.fatsquirrel.proxies.BotInvocationHandler;
 import de.hsa.games.fatsquirrel.space.XY;
 import de.hsa.games.fatsquirrel.ui.UI;
 
 public class BotGameImpl extends Game {
 
-	private Entity botPlayer;
+	private MasterSquirrelBot botPlayer;
 	private BotControllerFactory factory;
 	static BoardConfig boardConfig = new BoardConfig(0, 0);
 	private BotController botController;

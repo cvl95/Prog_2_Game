@@ -87,6 +87,7 @@ public final class XY {
 		return new XY(this.x + xy.getX(), this.y + xy.getY());
 	}
 	public static XY getVec(XY xy1, XY xy2) {
+	   //x1: Spitze , x2: Fuﬂ -> Spitze minus Fuﬂ = Vektor von x2 zu x1
 		return new XY(xy1.getX()-xy2.getX(), xy1.getY()-xy2.getY());
 	}
 	public static XY vecToDir(XY xy) {
