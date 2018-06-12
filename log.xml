@@ -2,51 +2,315 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2018-06-10T21:44:53.789046100Z</date>
-  <millis>1528667093789</millis>
-  <nanos>46100</nanos>
+  <date>2018-06-11T14:35:48.450275Z</date>
+  <millis>1528727748450</millis>
+  <nanos>275000</nanos>
   <sequence>0</sequence>
   <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
   <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
-  <method>collide</method>
-  <thread>21</thread>
-  <message>Collision Between:HandOperatedMasterSquirrel | ID 204 | Energy 100 | LOC: X 44 | LOC: Y 18 and GoodPlant | ID 200 | Energy 100 | LOC: X 45 | LOC: Y 18</message>
+  <class>de.hsa.games.fatsquirrel.botapi.TestBotFactory</class>
+  <method>createMasterBotController</method>
+  <thread>1</thread>
+  <message>MasterSquirrelBot created</message>
 </record>
 <record>
-  <date>2018-06-10T21:44:53.914656200Z</date>
-  <millis>1528667093914</millis>
-  <nanos>656200</nanos>
+  <date>2018-06-11T14:35:48.503274600Z</date>
+  <millis>1528727748503</millis>
+  <nanos>274600</nanos>
   <sequence>1</sequence>
   <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
   <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
-  <method>killAndReplace</method>
-  <thread>21</thread>
-  <message>K.I.A.: GoodPlant | ID 200 | Energy 100 | LOC: X 45 | LOC: Y 18</message>
+  <class>de.hsa.games.fatsquirrel.core.Launcher</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>BotGame launching</message>
 </record>
 <record>
-  <date>2018-06-10T21:45:03.955546500Z</date>
-  <millis>1528667103955</millis>
-  <nanos>546500</nanos>
+  <date>2018-06-11T14:35:48.758270Z</date>
+  <millis>1528727748758</millis>
+  <nanos>270000</nanos>
   <sequence>2</sequence>
   <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
   <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
-  <method>collide</method>
-  <thread>21</thread>
-  <message>Collision Between:HandOperatedMasterSquirrel | ID 204 | Energy 200 | LOC: X 45 | LOC: Y 13 and GoodPlant | ID 205 | Energy 100 | LOC: X 45 | LOC: Y 12</message>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@55b9834f</message>
 </record>
 <record>
-  <date>2018-06-10T21:45:03.957549600Z</date>
-  <millis>1528667103957</millis>
-  <nanos>549600</nanos>
+  <date>2018-06-11T14:35:48.759269600Z</date>
+  <millis>1528727748759</millis>
+  <nanos>269600</nanos>
   <sequence>3</sequence>
   <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
   <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
-  <method>killAndReplace</method>
-  <thread>21</thread>
-  <message>K.I.A.: GoodPlant | ID 205 | Energy 100 | LOC: X 45 | LOC: Y 12</message>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@406b15a4</message>
+</record>
+<record>
+  <date>2018-06-11T14:35:49.264261Z</date>
+  <millis>1528727749264</millis>
+  <nanos>261000</nanos>
+  <sequence>4</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@68ca1550</message>
+</record>
+<record>
+  <date>2018-06-11T14:35:49.266260700Z</date>
+  <millis>1528727749266</millis>
+  <nanos>260700</nanos>
+  <sequence>5</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@471d6b79</message>
+</record>
+<record>
+  <date>2018-06-11T14:35:49.768257800Z</date>
+  <millis>1528727749768</millis>
+  <nanos>257800</nanos>
+  <sequence>6</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@23df522e</message>
+</record>
+<record>
+  <date>2018-06-11T14:35:49.770252800Z</date>
+  <millis>1528727749770</millis>
+  <nanos>252800</nanos>
+  <sequence>7</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@74da64e6</message>
+</record>
+<record>
+  <date>2018-06-11T14:35:50.273242500Z</date>
+  <millis>1528727750273</millis>
+  <nanos>242500</nanos>
+  <sequence>8</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@4c829fb8</message>
+</record>
+<record>
+  <date>2018-06-11T14:35:50.274242600Z</date>
+  <millis>1528727750274</millis>
+  <nanos>242600</nanos>
+  <sequence>9</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@60e873f2</message>
+</record>
+<record>
+  <date>2018-06-11T14:35:50.792233600Z</date>
+  <millis>1528727750792</millis>
+  <nanos>233600</nanos>
+  <sequence>10</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@397f13e3</message>
+</record>
+<record>
+  <date>2018-06-11T14:35:50.794233600Z</date>
+  <millis>1528727750794</millis>
+  <nanos>233600</nanos>
+  <sequence>11</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@1e25ad7e</message>
+</record>
+<record>
+  <date>2018-06-11T14:35:51.296229500Z</date>
+  <millis>1528727751296</millis>
+  <nanos>229500</nanos>
+  <sequence>12</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@46028e5d</message>
+</record>
+<record>
+  <date>2018-06-11T14:35:51.297224700Z</date>
+  <millis>1528727751297</millis>
+  <nanos>224700</nanos>
+  <sequence>13</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@6556128c</message>
+</record>
+<record>
+  <date>2018-06-11T14:35:51.800214900Z</date>
+  <millis>1528727751800</millis>
+  <nanos>214900</nanos>
+  <sequence>14</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@24f7f5ce</message>
+</record>
+<record>
+  <date>2018-06-11T14:35:51.801215700Z</date>
+  <millis>1528727751801</millis>
+  <nanos>215700</nanos>
+  <sequence>15</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@178ae273</message>
+</record>
+<record>
+  <date>2018-06-11T14:35:52.304207100Z</date>
+  <millis>1528727752304</millis>
+  <nanos>207100</nanos>
+  <sequence>16</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@45a8f6b9</message>
+</record>
+<record>
+  <date>2018-06-11T14:35:52.305206600Z</date>
+  <millis>1528727752305</millis>
+  <nanos>206600</nanos>
+  <sequence>17</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@10bf4ef2</message>
+</record>
+<record>
+  <date>2018-06-11T14:35:52.809197900Z</date>
+  <millis>1528727752809</millis>
+  <nanos>197900</nanos>
+  <sequence>18</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@49bb483b</message>
+</record>
+<record>
+  <date>2018-06-11T14:35:52.810197400Z</date>
+  <millis>1528727752810</millis>
+  <nanos>197400</nanos>
+  <sequence>19</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@23195720</message>
+</record>
+<record>
+  <date>2018-06-11T14:35:53.312195400Z</date>
+  <millis>1528727753312</millis>
+  <nanos>195400</nanos>
+  <sequence>20</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@4486db1d</message>
+</record>
+<record>
+  <date>2018-06-11T14:35:53.313189100Z</date>
+  <millis>1528727753313</millis>
+  <nanos>189100</nanos>
+  <sequence>21</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@2c5c5367</message>
+</record>
+<record>
+  <date>2018-06-11T14:35:53.818179700Z</date>
+  <millis>1528727753818</millis>
+  <nanos>179700</nanos>
+  <sequence>22</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@3f352c47</message>
+</record>
+<record>
+  <date>2018-06-11T14:35:53.819179500Z</date>
+  <millis>1528727753819</millis>
+  <nanos>179500</nanos>
+  <sequence>23</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@567cdcd6</message>
+</record>
+<record>
+  <date>2018-06-11T14:35:54.321170800Z</date>
+  <millis>1528727754321</millis>
+  <nanos>170800</nanos>
+  <sequence>24</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@24d0ab37</message>
+</record>
+<record>
+  <date>2018-06-11T14:35:54.322170300Z</date>
+  <millis>1528727754322</millis>
+  <nanos>170300</nanos>
+  <sequence>25</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@6a5903a1</message>
 </record>
 </log>

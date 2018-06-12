@@ -19,11 +19,10 @@ public class BotInvocationHandler implements InvocationHandler {
 
    @Override
    public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-      logger.log(Level.INFO," " + method + " with params ");
+	   String s="";
       for (int i = 0; i < args.length; i++) 
-          System.out.print(" " + args[i]);
-      System.out.println();
-
+          s+=(" " + args[i]);
+      logger.log(Level.INFO,"Method called: " + method + " with params: "+s);
       Object result = null;
       try  {
           result = method.invoke(botController, args);

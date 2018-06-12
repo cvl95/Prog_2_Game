@@ -1,16 +1,16 @@
 package de.hsa.games.fatsquirrel.space;
 
+
+import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.ThreadLocalRandom;
 import static java.lang.Math.*;
 
 import de.hsa.games.fatsquirrel.config.BoardConfig;
 import de.hsa.games.fatsquirrel.core.EntitySet;
-import de.hsa.games.fatsquirrel.core.EntitySet_old;
 import de.hsa.games.fatsquirrel.entities.Entity;
-import de.hsa.games.fatsquirrel.entities.HandOperatedMasterSquirrel;
 
 public final class XY {
-	private static int counter = 0;
 	private final int x;
 	private final int y;
 	public static final XY UP = new XY(0,-1);
@@ -22,6 +22,8 @@ public final class XY {
 	public static final XY DOWN_LEFT = new XY(-1,1);
 	public static final XY DOWN_RIGHT = new XY(1,1);
 	public static final XY STAY = new XY(0,0);
+	
+	Map<Integer,Integer> dirHelperMap = new HashMap<Integer,Integer>();
 
 	public XY(int x, int y) {
 		this.x = x;
@@ -60,7 +62,6 @@ public final class XY {
 	 }
 
 	public static XY genVecfromRand() {
-		XY loc;
 		switch (ThreadLocalRandom.current().nextInt(1, 8 + 1)) {
 		case 1:
 			return new XY(1, 0);

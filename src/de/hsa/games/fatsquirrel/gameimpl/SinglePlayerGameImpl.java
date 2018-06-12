@@ -16,8 +16,7 @@ public class SinglePlayerGameImpl extends Game {
 
 	public SinglePlayerGameImpl(UI ui) {
 		super(ui, boardConfig);
-		humanPlayer = new HandOperatedMasterSquirrel(XY.getRndFreePos(this.getBoard().getEntitySet(), boardConfig),
-				command);
+		humanPlayer = new HandOperatedMasterSquirrel(XY.getRndFreePos(this.getBoard().getEntitySet(), boardConfig),command);
 		this.getBoard().getEntitySet().addEntity(humanPlayer);
 
 	}

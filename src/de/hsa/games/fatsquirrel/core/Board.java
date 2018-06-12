@@ -1,23 +1,16 @@
 package de.hsa.games.fatsquirrel.core;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import de.hsa.games.fatsquirrel.config.BoardConfig;
 import de.hsa.games.fatsquirrel.entities.BadBeast;
 import de.hsa.games.fatsquirrel.entities.BadPlant;
-import de.hsa.games.fatsquirrel.entities.Entity;
 import de.hsa.games.fatsquirrel.entities.GoodBeast;
 import de.hsa.games.fatsquirrel.entities.GoodPlant;
 import de.hsa.games.fatsquirrel.entities.HandOperatedMasterSquirrel;
-import de.hsa.games.fatsquirrel.entities.MasterSquirrel;
 import de.hsa.games.fatsquirrel.entities.Wall;
 import de.hsa.games.fatsquirrel.space.XY;
 import de.hsa.games.fatsquirrel.ui.BoardView;
 import de.hsa.games.fatsquirrel.ui.EntityContext;
 import de.hsa.games.fatsquirrel.util.commandscanner.Command;
-import de.hsa.games.fatsquirrel.util.commandscanner.CommandTypeInfo;
-import de.hsa.games.fatsquirrel.util.commandscanner.GameCommandType;
 
 public class Board {
 
