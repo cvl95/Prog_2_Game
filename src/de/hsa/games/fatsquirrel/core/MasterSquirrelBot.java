@@ -12,11 +12,13 @@ public class MasterSquirrelBot extends MasterSquirrel {
 
 	private ControllerContext controllerContext;
 	private BotController controller;
+	String name;
 	// private final BotController controllerContext;
 
 	public MasterSquirrelBot(XY xy, BotController controller) {
 		super(xy, EntityType.MasterSquirrel);
 		this.controller = controller;
+		
 	}
 
 	private ControllerContext getControllerContext(EntityContext entityContext) {

@@ -38,20 +38,6 @@ public class Launcher extends Application {
 
 		if (!console) {
 
-			if (botGame) {
-
-				FxUI fxUI = FxUI.createInstance(new XY(BoardConfig.FIELD_WIDTH, BoardConfig.FIELD_HEIGHT));
-				Game game = new BotGameImpl(fxUI, new TestBotFactory());
-				startGame(game);
-				logger.log(Level.INFO, "BotGame launching");
-
-			}
-			if (multiBotGame) {
-				FxUI fxUI = FxUI.createInstance(new XY(BoardConfig.FIELD_WIDTH, BoardConfig.FIELD_HEIGHT));
-				Game game = new MultiBotGameImpl(fxUI, new TestBotFactory());
-				startGame(game);
-				logger.log(Level.INFO, "MultiBotGame launching");
-			}
 			launch(args);
 
 		}
@@ -72,8 +58,21 @@ public class Launcher extends Application {
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		FxUI fxUI = FxUI.createInstance(new XY(BoardConfig.FIELD_WIDTH, BoardConfig.FIELD_HEIGHT));
-		final Game game = new SinglePlayerGameImpl(fxUI);
+		Game game = null;
+		if (botGame) {
+			game = new BotGameImpl(fxUI, new TestBotFactory());
+			startGame(game);
+			logger.log(Level.INFO, "BotGame launching");
 
+		}
+		if (multiBotGame) {
+			game = new MultiBotGameImpl(fxUI, new TestBotFactory());
+			startGame(game);
+			logger.log(Level.INFO, "MultiBotGame launching");
+		}
+		if (game == null) {
+			game = new SinglePlayerGameImpl(fxUI);
+		}
 		primaryStage.setScene(fxUI);
 		primaryStage.setTitle("SquirrelGame");
 		fxUI.getWindow().setOnCloseRequest(new EventHandler<WindowEvent>() {

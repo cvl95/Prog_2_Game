@@ -24,15 +24,14 @@ public class BoardConfig {
 	private final int NUM_GOODPLANT;
 	private  int NUM_MASTERSQUIRREL;
 	private  int NUM_HANDOPERATEDMASTERSQUIRREL;
+	private final int NUM_BOTS;
 	private final int NUM_WALL = (FIELD_WIDTH * 2) + (FIELD_HEIGHT * 2) - 4;
 	Properties configProps = new Properties();
 	private static final Logger logger = Logger.getLogger(Launcher.class.getName());
-
-	private int num_bots = 0;
 	private String botName;
 
 	public BoardConfig(int num_bots, int NUM_HANDOPERATEDMASTERSQUIRREL) {
-		this.num_bots = num_bots;
+		this.NUM_BOTS = num_bots;
 		this.NUM_HANDOPERATEDMASTERSQUIRREL = NUM_HANDOPERATEDMASTERSQUIRREL;
 		try {
 			FileInputStream in =  new FileInputStream("confProps.properties");
@@ -91,7 +90,7 @@ public class BoardConfig {
 	}
 	
 	public int getNumberBots() {
-		return num_bots;
+		return NUM_BOTS;
 	}
 
 	public int getWall() {

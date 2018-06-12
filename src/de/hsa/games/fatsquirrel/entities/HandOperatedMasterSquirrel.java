@@ -27,7 +27,7 @@ public class HandOperatedMasterSquirrel extends PlayerEntity {
 	      updateEnergy(-50);
 	      entCon
 	      .getEntitySet()
-	      .add
+	      .addEntity
 	      (new MiniSquirrel(50
 	            , getID()
 	            , new XY(getLoc().getX(), getLoc().getY())));  

@@ -31,7 +31,7 @@ public class FlattenedBoard implements BoardView, EntityContext {
 
 	public FlattenedBoard(Board board) {
 		this.board = board;
-		// kill0HPEntities();
+		 kill0HPEntities();
 		entArr = new Entity[board.getBoardConfig().getFieldWidth()][board.getBoardConfig().getFieldHeight()];// Entity
 																												// Array,
 																												// Entities
@@ -213,7 +213,6 @@ public class FlattenedBoard implements BoardView, EntityContext {
 	// }
 
 	@Override
-	// TODO: Problems regarding multiple HandOperated and their distance i think...
 	public Entity nearestPlayerEntity(XY pos) { // gibt mir die näheste Player-Entity zurück
 
 		Entity[] players = new Entity[board.getBoardConfig().getMasterSquirrel()];
@@ -378,9 +377,9 @@ public class FlattenedBoard implements BoardView, EntityContext {
 	}
 
 	@Override
-	public List<Entity> getEntitySet() {
+	public EntitySet getEntitySet() {
 
-		return (List<Entity>) set;
+		return   set;
 	}
 
 	@Override

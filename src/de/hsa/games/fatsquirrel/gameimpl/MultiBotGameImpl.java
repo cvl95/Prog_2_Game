@@ -11,7 +11,7 @@ import de.hsa.games.fatsquirrel.ui.UI;
 public class MultiBotGameImpl extends Game{
 	public BotControllerFactory factory;
 	public BotController botController;
-	static BoardConfig boardConfig = new BoardConfig(4,0);
+	static BoardConfig boardConfig = new BoardConfig(2,0);
 	
 	
 	public MultiBotGameImpl(UI ui, BotControllerFactory factory) {

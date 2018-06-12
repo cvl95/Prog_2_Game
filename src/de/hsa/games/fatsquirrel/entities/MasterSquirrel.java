@@ -22,7 +22,7 @@ public class MasterSquirrel extends PlayerEntity {
 		
 		updateEnergy(-50);
 		
-		entCon.getEntitySet().add(new MiniSquirrel(50, ID, new XY(getLoc().getX(), getLoc().getY())));	
+		entCon.getEntitySet().addEntity(new MiniSquirrel(50, ID, new XY(getLoc().getX(), getLoc().getY())));	
 	}
 	public void getStunned() {
 		stunCounter = 3;
