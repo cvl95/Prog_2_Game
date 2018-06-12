@@ -23,7 +23,8 @@ public enum GameCommandType implements CommandTypeInfo {
 	UP_RIGHT("up_right", "move up_right"),
 	DOWN_LEFT("down_left", "move down_left"),
 	DOWN_RIGHT("down_right", "move down_right"),
-	STAY("stay", "stay on position");
+	STAY("stay", "stay on position"),
+	ESCAPE("+", "terminates game");
 	
 	
 

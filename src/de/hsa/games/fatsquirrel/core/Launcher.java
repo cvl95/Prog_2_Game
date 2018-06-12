@@ -40,7 +40,7 @@ public class Launcher extends Application {
 
 			if (botGame) {
 
-				FxUI fxUI = FxUI.createInstance(new XY(BoardConfig.FIELD_WIDTH, BoardConfig.FIELD_HEIGHT));
+				FxUI fxUI = FxUI.createInstance(new XY(BoardConfig.FIELD_HEIGHT, BoardConfig.FIELD_HEIGHT));
 				Game game = new BotGameImpl(fxUI, new TestBotFactory());
 				startGame(game);
 				logger.log(Level.INFO, "BotGame launching");
