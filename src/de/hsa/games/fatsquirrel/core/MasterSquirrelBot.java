@@ -15,7 +15,7 @@ public class MasterSquirrelBot extends MasterSquirrel {
 	// private final BotController controllerContext;
 
 	public MasterSquirrelBot(XY xy, BotController controller) {
-		super(xy, EntityType.HandOperatedMasterSquirrel);
+		super(xy, EntityType.MasterSquirrel);
 		this.controller = controller;
 	}
 

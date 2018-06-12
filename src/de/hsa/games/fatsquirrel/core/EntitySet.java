@@ -35,20 +35,20 @@ public class EntitySet {
 	}
 
 	public void entitiesNextStep(EntityContext entityContext, Command command) {
-		System.out.println("EntitySet nextStep");
 		Iterator<Entity> iterator = set.iterator();
 		Entity tmp;
 		
 		while (iterator.hasNext()) {
 			tmp = iterator.next();
-			
 			if (tmp instanceof Character) {
 			
 				if(tmp instanceof MasterSquirrelBot) {
-					((MasterSquirrelBot)tmp).nextStep(entityContext);					
+					((MasterSquirrelBot)tmp).nextStep(entityContext);	
+//					continue;
 				}
 				if(tmp instanceof HandOperatedMasterSquirrel) {
 					((HandOperatedMasterSquirrel)tmp).setCommand(command);
+//					continue;
 				}
 				((Character)tmp).nextStep(entityContext);
 				
@@ -110,7 +110,7 @@ public class EntitySet {
 
 		while (iterator.hasNext()) {
 			tmp = iterator.next();
-			a += "EntitySet " + counter + " |ID " + tmp.getID() + " | Energy " + tmp.getEnergy() + " | LOC: X "
+			a += "Type " + tmp.getEntityType() + " |ID " + tmp.getID() + " | Energy " + tmp.getEnergy() + " | LOC: X "
 					+ tmp.getLoc().getX() + " | LOC: Y " + tmp.getLoc().getY() + "\r";
 			counter++;
 		}

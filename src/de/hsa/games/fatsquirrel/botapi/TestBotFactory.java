@@ -19,9 +19,7 @@ public class TestBotFactory implements BotControllerFactory{
 
 	@Override
 	public BotController createMiniBotController() {
-		return new TestBot();
-	   BotController miniBot = new TestBot();
-      
+	  BotController miniBot = new TestBot();
       BotInvocationHandler handler = new BotInvocationHandler(miniBot);
       BotController miniBotProxy = (BotController) Proxy.newProxyInstance(BotController.class.getClassLoader(), new Class[] {BotController.class}, handler);
       

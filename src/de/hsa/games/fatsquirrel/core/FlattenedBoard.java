@@ -19,9 +19,8 @@ import de.hsa.games.fatsquirrel.ui.BoardView;
 import de.hsa.games.fatsquirrel.ui.EntityContext;
 
 public class FlattenedBoard implements BoardView, EntityContext {
-   
-   private static final Logger logger = Logger.getLogger(Launcher.class.getName());
 
+	private static final Logger logger = Logger.getLogger(Launcher.class.getName());
 
 	Board board;
 	public Entity[][] entArr;
@@ -29,9 +28,10 @@ public class FlattenedBoard implements BoardView, EntityContext {
 	private Iterator<Entity> iterator;
 	private int counter = 0;
 	private Entity tmp;
+
 	public FlattenedBoard(Board board) {
 		this.board = board;
-//		kill0HPEntities();
+		// kill0HPEntities();
 		entArr = new Entity[board.getBoardConfig().getFieldWidth()][board.getBoardConfig().getFieldHeight()];// Entity
 																												// Array,
 																												// Entities
@@ -44,22 +44,32 @@ public class FlattenedBoard implements BoardView, EntityContext {
 																												// Array
 																												// abgespeichert
 
-//		for (int i = 0; i < board.getEntitySet().getEntityArray().length -1; i++) {
-//			if (board.getEntitySet().getEntityArray()[i] != null)
-//			entArr[board.getEntitySet().getEntityArray()[i].getLoc().getX()][board.getEntitySet().getEntityArray()[i].getLoc().getY()] = board.getEntitySet().getEntityArray()[i];
-//			// Array wird mit Entities an richtiger Position befüllt
+		// for (int i = 0; i < board.getEntitySet().getEntityArray().length -1; i++) {
+		// if (board.getEntitySet().getEntityArray()[i] != null)
+		// entArr[board.getEntitySet().getEntityArray()[i].getLoc().getX()][board.getEntitySet().getEntityArray()[i].getLoc().getY()]
+		// = board.getEntitySet().getEntityArray()[i];
+		// // Array wird mit Entities an richtiger Position befüllt
+
+		set = board.getEntitySet();
+		iterator = set.getEntityList().iterator();
 		
-		 set = board.getEntitySet();
-		 iterator = set.getEntityList().iterator();
-		 while(iterator.hasNext()) {
+		while (iterator.hasNext()) {
 			tmp = iterator.next();
-			 entArr[tmp.getLoc().getX()][tmp.getLoc().getY()] = tmp;
-			 counter++;
-		 }
+			entArr[tmp.getLoc().getX()][tmp.getLoc().getY()] = tmp;
+			counter++;
+		}
+		
+	
 	}
 
 	@Override
 	public EntityType getEntityType(int x, int y) {
+		
+		
+		
+		
+		
+		
 		return entArr[x][y].getEntityType();
 	}
 
@@ -77,13 +87,13 @@ public class FlattenedBoard implements BoardView, EntityContext {
 
 	public boolean collide(Entity entity, XY loc) { // Rückgabewert sagt ob entity auf target bewegen kann
 		Entity target = entArr[loc.getX()][loc.getY()];
-		if(entity==target)
+		if (entity == target)
 			return false;
-		
+
 		if (entity instanceof MasterSquirrel || entity instanceof MiniSquirrel
-				|| entity instanceof HandOperatedMasterSquirrel) { 
-		   logger.log(Level.INFO, "Collision Between:" + entity.toString()+" and " + target.toString());
-		   // Kollision für Master/MiniSquirrel
+				|| entity instanceof HandOperatedMasterSquirrel) {
+			logger.log(Level.INFO, "Collision Between:" + entity.toString() + " and " + target.toString());
+			// Kollision für Master/MiniSquirrel
 			switch (getMoveDirEnt(loc)) {
 			case BadBeast:
 				if (((BadBeast) target).bite() > 7) {
@@ -93,7 +103,7 @@ public class FlattenedBoard implements BoardView, EntityContext {
 					entity.updateEnergy(target.getEnergy());
 					return false;
 				}
-				
+
 			case GoodBeast:
 				entity.updateEnergy(target.getEnergy());
 				killAndReplace(target);
@@ -137,35 +147,33 @@ public class FlattenedBoard implements BoardView, EntityContext {
 				if (entity instanceof BadBeast) {
 					if (((BadBeast) entity).bite() > 7) {
 						killAndReplace(entity);
-					}
-					else {
+					} else {
 						target.updateEnergy(entity.getEnergy());
-					}	
+					}
 				}
-				if (entity instanceof  GoodBeast) {
+				if (entity instanceof GoodBeast) {
 					target.updateEnergy(entity.getEnergy());
 					killAndReplace(entity);
 				}
 				return false;
 			}
-			if(entity.getEntityType() == EntityType.BadBeast)
+			if (entity.getEntityType() == EntityType.BadBeast)
 				((BadBeast) entity).randStep(this);
 			else
 				((GoodBeast) entity).randStep(this);
 			return false;
-			
+
 		}
 		return false;
 
 	}
 
 	public void tryMove(Entity entity, XY moveDirection) {
-		System.out.println("TryMove FlattenedBoard entity: " + entity.toString());
 		int posY = entity.getLoc().addVec(moveDirection).getY();
 		int posX = entity.getLoc().addVec(moveDirection).getX();
 		if (posX < entArr.length && posY < entArr[1].length && posX >= 0 && posY >= 0) { // überprüft ob
-																									// Position noch im
-																									// Array ist
+																							// Position noch im
+																							// Array ist
 
 			if (getMoveDirEnt(entity.getLoc().addVec(moveDirection)) == null) {
 				entity.setXY(entity.getLoc().addVec(moveDirection));
@@ -205,13 +213,13 @@ public class FlattenedBoard implements BoardView, EntityContext {
 	// }
 
 	@Override
-	//TODO: Problems regarding multiple HandOperated and their distance i think...
+	// TODO: Problems regarding multiple HandOperated and their distance i think...
 	public Entity nearestPlayerEntity(XY pos) { // gibt mir die näheste Player-Entity zurück
 
-		Entity[] players = new Entity[board.getBoardConfig().getMasterSquirrel() ];
+		Entity[] players = new Entity[board.getBoardConfig().getMasterSquirrel()];
 		int k = 0;
-		
-		set =  board.getEntitySet();
+
+		set = board.getEntitySet();
 		iterator = set.getEntityList().iterator();
 		while (iterator.hasNext()) {
 			tmp = iterator.next();
@@ -220,75 +228,79 @@ public class FlattenedBoard implements BoardView, EntityContext {
 				k++;
 			}
 		}
-//		for (int j = 0; j < board.getEntitySet().getEntityArray().length - 1; j++) {
-//			if (board.getEntitySet().getEntityArray()[j] != null) {
-//				if (board.getEntitySet().getEntityArray()[j] instanceof MasterSquirrel) { //.getEntityType() == EntityType.MasterSquirrel) {
-//					players[k] = board.getEntitySet().getEntityArray()[j]; //Befüllt Entity Array players mit HoMS
-//					k++;
-//				}
-//			}
-//		}
+		// for (int j = 0; j < board.getEntitySet().getEntityArray().length - 1; j++) {
+		// if (board.getEntitySet().getEntityArray()[j] != null) {
+		// if (board.getEntitySet().getEntityArray()[j] instanceof MasterSquirrel) {
+		// //.getEntityType() == EntityType.MasterSquirrel) {
+		// players[k] = board.getEntitySet().getEntityArray()[j]; //Befüllt Entity Array
+		// players mit HoMS
+		// k++;
+		// }
+		// }
+		// }
 		Entity nearest = null;
 
 		int dist = XY.pyth(board.getBoardConfig().getFieldWidth(), board.getBoardConfig().getFieldHeight());
 		for (int i = 0; i < players.length; i++) {
 			int c = XY.getDist(players[i], pos);
-			if (c < dist) 
+			if (c < dist)
 				nearest = players[i];
 		}
 
 		return nearest;
 	}
+
 	public Entity nearestEntity(XY pos, EntityType type) { // gibt mir die näheste Player-Entity zurück
-		
+
 		Entity[] players = new Entity[100];
 		int k = 0;
-		
-//		 set = (List<Entity>) board.getEntitySet();
-//		 iterator = set.iterator();
-//		 while(iterator.hasNext()) {
-//			tmp = iterator.next();
-//			 entArr[tmp.getLoc().getX()][tmp.getLoc().getY()] = tmp;
-//			 counter++;
-		
+
+		// set = (List<Entity>) board.getEntitySet();
+		// iterator = set.iterator();
+		// while(iterator.hasNext()) {
+		// tmp = iterator.next();
+		// entArr[tmp.getLoc().getX()][tmp.getLoc().getY()] = tmp;
+		// counter++;
+
 		set = board.getEntitySet();
 		iterator = set.getEntityList().iterator();
-		
-		while(iterator.hasNext()) {
+
+		while (iterator.hasNext()) {
 			tmp = iterator.next();
-			
-			if(tmp.getEntityType() == type) {
+
+			if (tmp.getEntityType() == type) {
 				players[k] = tmp;
 				k++;
 			}
 		}
-		
-		
-//		for (int j = 0; j < board.getEntitySet().getEntityArray().length - 1; j++) {
-//			if (board.getEntitySet().getEntityArray()[j] != null) {
-//				if (board.getEntitySet().getEntityArray()[j].getEntityType() == type) {
-//					players[k] = board.getEntitySet().getEntityArray()[j]; //Befüllt Entity Array players mit HoMS
-//					k++;
-//				}
-//			}
-//		}
+
+		// for (int j = 0; j < board.getEntitySet().getEntityArray().length - 1; j++) {
+		// if (board.getEntitySet().getEntityArray()[j] != null) {
+		// if (board.getEntitySet().getEntityArray()[j].getEntityType() == type) {
+		// players[k] = board.getEntitySet().getEntityArray()[j]; //Befüllt Entity Array
+		// players mit HoMS
+		// k++;
+		// }
+		// }
+		// }
 		Entity nearest = null;
 
 		int dist = XY.pyth(board.getBoardConfig().getFieldWidth(), board.getBoardConfig().getFieldHeight());
 		for (int i = 0; i < players.length; i++) {
-			if(players[i]==null) 
+			if (players[i] == null)
 				return nearest;
 			int c = XY.getDist(players[i], pos);
-			if (c < dist) 
+			if (c < dist)
 				nearest = players[i];
 		}
 
 		return nearest;
 	}
+
 	//
 	@Override
 	public void killAndReplace(Entity entity) { // ?! Wie kann ich eine neue Entity einfügen
-	   logger.log(Level.INFO, "K.I.A.: "+ entity.toString());
+		logger.log(Level.INFO, "K.I.A.: " + entity.toString());
 		XY loc = XY.getRndFreePos(board.getEntitySet(), board.getBoardConfig());
 		switch (entity.getEntityType()) {
 		case BadBeast:
@@ -310,62 +322,79 @@ public class FlattenedBoard implements BoardView, EntityContext {
 		default:
 			break;
 		}
+//		System.out.println("FLATTENEDBOARD ENTARR");
+//		for (int i = 0; i < entArr.length; i++) {
+//			for (int j = 0; j < entArr[i].length; j++) {
+//				
+//				if(entArr[i][j] != null)
+//					
+//				System.out.println(entArr[i][j].toString());
+//			}
+//		}
 
 	}
+
 	public void kill(Entity entity) {
-	   logger.log(Level.INFO, "K.I.A.: "+ entity.toString());
-	   board.getEntitySet().deleteEntity(entity);
+		logger.log(Level.INFO, "K.I.A.: " + entity.toString());
+		board.getEntitySet().deleteEntity(entity);
 	}
 
 	public void kill0HPEntities() {
-		
-		set =  board.getEntitySet();
+
+		set = board.getEntitySet();
 		iterator = set.getEntityList().iterator();
-		
-		while(iterator.hasNext()) {
+
+		while (iterator.hasNext()) {
 			tmp = iterator.next();
-			if(tmp instanceof HandOperatedMasterSquirrel) {
+			if (tmp instanceof HandOperatedMasterSquirrel) {
 				if (tmp.getEnergy() <= 0)
 					set.getEntityList().remove(tmp);
 			}
 		}
-		
-		
-		
-//		Entity entities[]=board.getEntitySet().getEntityArray();	
-//		for (int i = 0; i < entities.length; i++) {
-//		   if(entities[i]!=null)
-//		      if(entities[i] instanceof HandOperatedMasterSquirrel)
-//		         if(entities[i].getEnergy()<=0) 
-//		            board.getEntitySet().deleteEntity(entities[i]);
-//		}
-		
+
+		// Entity entities[]=board.getEntitySet().getEntityArray();
+		// for (int i = 0; i < entities.length; i++) {
+		// if(entities[i]!=null)
+		// if(entities[i] instanceof HandOperatedMasterSquirrel)
+		// if(entities[i].getEnergy()<=0)
+		// board.getEntitySet().deleteEntity(entities[i]);
+		// }
+
 	}
-	
-	
+
 	@Override
 	public EntityType getEntityType(XY xy) {
-		
-	   if(entArr[xy.getX()][xy.getY()]==null) {
-	      return EntityType.EMPTY;
-	   }
-	   else
-		return entArr[xy.getX()][xy.getY()].getEntityType();
+
+		if (entArr[xy.getX()][xy.getY()] == null) {
+			return EntityType.EMPTY;
+		} else
+			return entArr[xy.getX()][xy.getY()].getEntityType();
 	}
 
 	@Override
 	public FlattenedBoard flatten() {
-		
+
 		return null;
 	}
 
 	@Override
 	public List<Entity> getEntitySet() {
-	
+
 		return (List<Entity>) set;
 	}
+
 	@Override
 	public FlattenedBoard getflattenedboard() {
+
+		System.out.println("FLATTENEDBOARD ENTARR");
+		for (int i = 0; i < entArr.length; i++) {
+			for (int j = 0; j < entArr[i].length; j++) {
+				
+				if(entArr[i][j] != null)
+					
+				System.out.println(entArr[i][j].toString());
+			}
+		}
 		
 		return this;
 	}

@@ -56,8 +56,10 @@ public class FxUI extends Scene implements UI, ActionListener {
 				KeyCode code = keyEvent.getCode();
 				setCommand(code);
 			}
+
 			/**
 			 * setter for last fetched input
+			 * 
 			 * @param code
 			 */
 			private void setCommand(KeyCode code) {
@@ -86,34 +88,37 @@ public class FxUI extends Scene implements UI, ActionListener {
 			for (int j = 0; j < viewSize.getY(); j++) {
 				XY currPos = new XY(i, j);
 				EntityType et = view.getEntityType(currPos);
+				if (et != null)
+					System.out.println("FXui:  " + et.toString());
+					
 				Color color = Color.WHITE;
 				switch (et) {
 				case BadBeast:
-					color = color.RED;
+					color = Color.RED;
 					break;
 				case GoodBeast:
-					color = color.GREEN;
+					color = Color.GREEN;
 					break;
 				case BadPlant:
-					color = color.VIOLET;
+					color = Color.VIOLET;
 					break;
 				case GoodPlant:
-					color = color.TURQUOISE;
+					color = Color.TURQUOISE;
 					break;
 				case MasterSquirrel:
-					color = color.BLUE;
+					color = Color.BLUE;
 					break;
 				case HandOperatedMasterSquirrel:
-					color = color.BLUE;
+					color = Color.BLUE;
 					break;
 				case MiniSquirrel:
-					color = color.BROWN;
+					color = Color.BROWN;
 					break;
 				case Wall:
-					color = color.ORANGE;
+					color = Color.ORANGE;
 					break;
 				case EMPTY:
-					color = color.WHITE;
+					color = Color.WHITE;
 					break;
 
 				}

@@ -3,6 +3,7 @@ package de.hsa.games.fatsquirrel.core;
 import java.util.ArrayList;
 import java.util.List;
 
+import de.hsa.games.fatsquirrel.botapi.TestBotFactory;
 import de.hsa.games.fatsquirrel.config.BoardConfig;
 import de.hsa.games.fatsquirrel.entities.BadBeast;
 import de.hsa.games.fatsquirrel.entities.BadPlant;
@@ -75,10 +76,12 @@ public class Board {
 
 		}
 		// init Mastersquirrels
-//		for (int i = 0; i < boardConfig.getMasterSquirrel(); i++) {
-//			xy = XY.getRndFreePos(entitySet, boardConfig);
-//			entitySet.addEntity(new MasterSquirrel(xy, EntityType.MasterSquirrel));
-//		}
+		for (int i = 0; i < boardConfig.getNumberBots(); i++) {
+			xy = XY.getRndFreePos(entitySet, boardConfig);
+			entitySet.addEntity(new MasterSquirrelBot(xy, new TestBotFactory().createMasterBotController()));
+		}
+		
+		
 	}
 
 	// führt Spieldaten des aktuellen Spielbretts in 2d Array Darstellung zusammen

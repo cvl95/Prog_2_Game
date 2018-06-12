@@ -41,7 +41,6 @@ public class BadBeast extends Character {
 			if (XY.getDist(nearestPlayer, this.getLoc()) <6) {
 			   logger.log(Level.INFO, "BadBeast "+this.getID()+" starts chase");
 				XY vecToNearest = XY.getVec(nearestPlayer.getLoc(), this.getLoc());
-				//System.out.println("BadBeast.java's dir to Player:"+XY.vecToDir(vecToNearest).getX() + XY.vecToDir(vecToNearest).getY());
 				entityContext.tryMove(this,XY.vecToDir(vecToNearest));
 			
 			} else

@@ -17,7 +17,7 @@ public class State {
 	}
 
 	public FlattenedBoard flattenedBoard() {
-		return null;
+		return board.flatten();
 		
 	}
 	

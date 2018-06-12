@@ -13,6 +13,7 @@ import java.util.logging.Logger;
 import de.hsa.games.fatsquirrel.botapi.TestBotFactory;
 import de.hsa.games.fatsquirrel.config.BoardConfig;
 import de.hsa.games.fatsquirrel.gameimpl.BotGameImpl;
+import de.hsa.games.fatsquirrel.gameimpl.MultiBotGameImpl;
 import de.hsa.games.fatsquirrel.gameimpl.SinglePlayerGameImpl;
 import de.hsa.games.fatsquirrel.space.XY;
 import de.hsa.games.fatsquirrel.ui.ConsoleUI;
@@ -28,7 +29,8 @@ public class Launcher extends Application {
 	 * Handoperated
 	 */
 	private static boolean console = false;
-	private static boolean botGame = true;
+	private static boolean botGame = false;
+	private static boolean multiBotGame = true;
 	private static final Logger logger = Logger.getLogger(Launcher.class.getName());
 
 	public static void main(String[] args) {
@@ -43,6 +45,12 @@ public class Launcher extends Application {
 				startGame(game);
 				logger.log(Level.INFO, "BotGame launching");
 
+			}
+			if (multiBotGame) {
+				FxUI fxUI = FxUI.createInstance(new XY(BoardConfig.FIELD_WIDTH, BoardConfig.FIELD_HEIGHT));
+				Game game = new MultiBotGameImpl(fxUI, new TestBotFactory());
+				startGame(game);
+				logger.log(Level.INFO, "MultiBotGame launching");
 			}
 			launch(args);
 

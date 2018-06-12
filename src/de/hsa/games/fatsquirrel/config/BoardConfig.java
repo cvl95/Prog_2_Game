@@ -4,19 +4,21 @@ import de.hsa.games.fatsquirrel.space.XY;
 
 public class BoardConfig {
 
-	public static final int FIELD_WIDTH = 50;
-	public static final int FIELD_HEIGHT = 50;
+	public static final int FIELD_WIDTH = 15;
+	public static final int FIELD_HEIGHT = 15;
 
-	private final int NUM_BADBEAST = 1;
+	private final int NUM_BADBEAST =1;
 	private final int NUM_GOODBEAST = 1;
 	private final int NUM_BADPLANT = 1;
-	private final int NUM_GOODPLANT = 5;
+	private final int NUM_GOODPLANT = 1;
 	private  int NUM_MASTERSQUIRREL;
 	private  int NUM_HANDOPERATEDMASTERSQUIRREL;
 	private final int NUM_WALL = (FIELD_WIDTH * 2) + (FIELD_HEIGHT * 2) - 4;
+	private int num_bots = 0;
+	private String botName;
 
-	public BoardConfig(int NUM_MASTERSQUIRREL, int NUM_HANDOPERATEDMASTERSQUIRREL) {
-		this.NUM_MASTERSQUIRREL = NUM_MASTERSQUIRREL;
+	public BoardConfig(int num_bots, int NUM_HANDOPERATEDMASTERSQUIRREL) {
+		this.num_bots = num_bots;
 		this.NUM_HANDOPERATEDMASTERSQUIRREL = NUM_HANDOPERATEDMASTERSQUIRREL;
 	}
 	public void setMasterSquirrel(int masterSquirrel) {
@@ -53,6 +55,10 @@ public class BoardConfig {
 
 	public int getHandOperatedMaster() {
 		return NUM_HANDOPERATEDMASTERSQUIRREL;
+	}
+	
+	public int getNumberBots() {
+		return num_bots;
 	}
 
 	public int getWall() {
