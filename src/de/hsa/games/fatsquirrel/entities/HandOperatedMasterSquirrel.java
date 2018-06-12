@@ -42,17 +42,13 @@ public class HandOperatedMasterSquirrel extends PlayerEntity {
 	}
 
 	public void nextStep(EntityContext entityContext) {
-		System.out.println("Handoperated nextstep: ");
 		if (command == null) {
-			System.out.println("Handoperated command == null");
 			return;
 		}
 		if (command.getCommandType() == null) {
-			System.out.println("Handoperated commandtype == null: " + command.getCommandType());
 			return;
 		}
 		CommandTypeInfo type = command.getCommandType();
-		System.out.println("handoperated before trymove");
 		if (type == GameCommandType.UP)
 			entityContext.tryMove(this, XY.UP);
 		else if (type == GameCommandType.DOWN)

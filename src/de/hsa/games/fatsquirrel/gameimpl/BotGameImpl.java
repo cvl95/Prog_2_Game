@@ -18,11 +18,11 @@ public class BotGameImpl extends Game {
 	public BotGameImpl(UI ui, BotControllerFactory factory) {
 		super(ui, boardConfig);
 	
-		boardConfig.setMasterSquirrel(1);
-		this.factory = factory;
-		botController = factory.createMasterBotController();
-		botPlayer = new MasterSquirrelBot(XY.getRndFreePos(this.getBoard().getEntitySet(), boardConfig), botController);
-		this.getBoard().getEntitySet().addEntity(botPlayer);
+//		boardConfig.setMasterSquirrel(1);
+//		this.factory = factory;
+//		botController = factory.createMasterBotController();
+//		botPlayer = new MasterSquirrelBot(XY.getRndFreePos(this.getBoard().getEntitySet(), boardConfig), botController);
+//		this.getBoard().getEntitySet().addEntity(botPlayer);
 		
 	}
 

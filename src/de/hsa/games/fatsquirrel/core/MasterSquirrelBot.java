@@ -29,7 +29,6 @@ public class MasterSquirrelBot extends MasterSquirrel {
 
 	@Override
 	public void nextStep(EntityContext entityContext) {
-		System.out.println("MasterSquirrelBot Nextstep");
 		// entityContext.tryMove(this, XY.RIGHT);
 	
 		// cci = getControllerContext(entityContext);

@@ -22,7 +22,6 @@ public class GoodBeast extends Character {
 	
 	public void nextStep(EntityContext entityContext) {
 		//TODO Wechselnde Instanzen vom MS/HOMS im Entity Array von Board, übergeben in entity Context 
-		System.out.println("GoodBeast nextStep");
 		Entity nearestPlayer = entityContext.nearestEntity(this.getLoc(), EntityType.MasterSquirrel);
 		if(nearestPlayer==null)
          nearestPlayer = entityContext.nearestEntity(this.getLoc(), EntityType.HandOperatedMasterSquirrel);

@@ -2,627 +2,9 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-<<<<<<< HEAD
-  <date>2018-06-12T13:28:53.557702400Z</date>
-  <millis>1528810133557</millis>
-  <nanos>702400</nanos>
-  <sequence>0</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.core.Launcher</class>
-  <method>main</method>
-  <thread>1</thread>
-  <message>MultiBotGame launching</message>
-</record>
-<record>
-  <date>2018-06-12T13:28:53.819904800Z</date>
-  <millis>1528810133819</millis>
-  <nanos>904800</nanos>
-  <sequence>1</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
-  <method>invoke</method>
-  <thread>19</thread>
-  <message> public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params </message>
-</record>
-<record>
-  <date>2018-06-12T13:28:53.821710400Z</date>
-  <millis>1528810133821</millis>
-  <nanos>710400</nanos>
-  <sequence>2</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
-  <method>invoke</method>
-  <thread>19</thread>
-  <message> public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params </message>
-</record>
-<record>
-  <date>2018-06-12T13:28:53.822703500Z</date>
-  <millis>1528810133822</millis>
-  <nanos>703500</nanos>
-  <sequence>3</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
-  <method>collide</method>
-  <thread>19</thread>
-  <message>Collision Between:MasterSquirrel | ID 60 | Energy 1000 | LOC: X 4 | LOC: Y 13 and Wall | ID 45 | Energy -10 | LOC: X 4 | LOC: Y 14</message>
-</record>
-<record>
-  <date>2018-06-12T13:28:53.825703700Z</date>
-  <millis>1528810133825</millis>
-  <nanos>703700</nanos>
-  <sequence>4</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
-  <method>invoke</method>
-  <thread>19</thread>
-  <message> public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params </message>
-</record>
-<record>
-  <date>2018-06-12T13:28:53.827704900Z</date>
-  <millis>1528810133827</millis>
-  <nanos>704900</nanos>
-  <sequence>5</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
-  <method>invoke</method>
-  <thread>19</thread>
-  <message> public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params </message>
-</record>
-<record>
-  <date>2018-06-12T13:28:53.837706200Z</date>
-  <millis>1528810133837</millis>
-  <nanos>706200</nanos>
-  <sequence>6</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
-  <method>invoke</method>
-  <thread>19</thread>
-  <message> public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params </message>
-</record>
-<record>
-  <date>2018-06-12T13:28:53.840709Z</date>
-  <millis>1528810133840</millis>
-  <nanos>709000</nanos>
-  <sequence>7</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
-  <method>collide</method>
-  <thread>19</thread>
-  <message>Collision Between:MasterSquirrel | ID 62 | Energy 1000 | LOC: X 7 | LOC: Y 13 and Wall | ID 48 | Energy -10 | LOC: X 7 | LOC: Y 14</message>
-</record>
-<record>
-  <date>2018-06-12T13:28:53.841714300Z</date>
-  <millis>1528810133841</millis>
-  <nanos>714300</nanos>
-  <sequence>8</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
-  <method>invoke</method>
-  <thread>19</thread>
-  <message> public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params </message>
-</record>
-<record>
-  <date>2018-06-12T13:28:53.842703600Z</date>
-  <millis>1528810133842</millis>
-  <nanos>703600</nanos>
-  <sequence>9</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
-  <method>collide</method>
-  <thread>19</thread>
-  <message>Collision Between:MasterSquirrel | ID 62 | Energy 990 | LOC: X 7 | LOC: Y 13 and Wall | ID 48 | Energy -10 | LOC: X 7 | LOC: Y 14</message>
-</record>
-<record>
-  <date>2018-06-12T13:28:53.844702900Z</date>
-  <millis>1528810133844</millis>
-  <nanos>702900</nanos>
-  <sequence>10</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
-  <method>invoke</method>
-  <thread>19</thread>
-  <message> public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params </message>
-</record>
-<record>
-  <date>2018-06-12T13:28:53.846716700Z</date>
-  <millis>1528810133846</millis>
-  <nanos>716700</nanos>
-  <sequence>11</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
-  <method>invoke</method>
-  <thread>19</thread>
-  <message> public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params </message>
-</record>
-<record>
-  <date>2018-06-12T13:28:53.848098800Z</date>
-  <millis>1528810133848</millis>
-  <nanos>98800</nanos>
-  <sequence>12</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
-  <method>collide</method>
-  <thread>19</thread>
-  <message>Collision Between:MasterSquirrel | ID 63 | Energy 1000 | LOC: X 5 | LOC: Y 13 and Wall | ID 46 | Energy -10 | LOC: X 5 | LOC: Y 14</message>
-</record>
-<record>
-  <date>2018-06-12T13:28:54.351710100Z</date>
-  <millis>1528810134351</millis>
-  <nanos>710100</nanos>
-  <sequence>13</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
-  <method>invoke</method>
-  <thread>19</thread>
-  <message> public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params </message>
-</record>
-<record>
-  <date>2018-06-12T13:28:54.352702300Z</date>
-  <millis>1528810134352</millis>
-  <nanos>702300</nanos>
-  <sequence>14</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
-  <method>collide</method>
-  <thread>19</thread>
-  <message>Collision Between:MasterSquirrel | ID 60 | Energy 990 | LOC: X 4 | LOC: Y 13 and Wall | ID 45 | Energy -10 | LOC: X 4 | LOC: Y 14</message>
-</record>
-<record>
-  <date>2018-06-12T13:28:54.354036500Z</date>
-  <millis>1528810134354</millis>
-  <nanos>36500</nanos>
-  <sequence>15</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
-  <method>invoke</method>
-  <thread>19</thread>
-  <message> public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params </message>
-</record>
-<record>
-  <date>2018-06-12T13:28:54.355159300Z</date>
-  <millis>1528810134355</millis>
-  <nanos>159300</nanos>
-  <sequence>16</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
-  <method>collide</method>
-  <thread>19</thread>
-  <message>Collision Between:MasterSquirrel | ID 60 | Energy 980 | LOC: X 4 | LOC: Y 13 and Wall | ID 45 | Energy -10 | LOC: X 4 | LOC: Y 14</message>
-</record>
-<record>
-  <date>2018-06-12T13:28:54.355707Z</date>
-  <millis>1528810134355</millis>
-  <nanos>707000</nanos>
-  <sequence>17</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
-  <method>invoke</method>
-  <thread>19</thread>
-  <message> public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params </message>
-</record>
-<record>
-  <date>2018-06-12T13:28:54.356703800Z</date>
-  <millis>1528810134356</millis>
-  <nanos>703800</nanos>
-  <sequence>18</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
-  <method>invoke</method>
-  <thread>19</thread>
-  <message> public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params </message>
-</record>
-<record>
-  <date>2018-06-12T13:28:54.357704500Z</date>
-  <millis>1528810134357</millis>
-  <nanos>704500</nanos>
-  <sequence>19</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
-  <method>invoke</method>
-  <thread>19</thread>
-  <message> public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params </message>
-</record>
-<record>
-  <date>2018-06-12T13:28:54.357978800Z</date>
-  <millis>1528810134357</millis>
-  <nanos>978800</nanos>
-  <sequence>20</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
-  <method>collide</method>
-  <thread>19</thread>
-  <message>Collision Between:MasterSquirrel | ID 62 | Energy 980 | LOC: X 7 | LOC: Y 13 and Wall | ID 48 | Energy -10 | LOC: X 7 | LOC: Y 14</message>
-</record>
-<record>
-  <date>2018-06-12T13:28:54.358704200Z</date>
-  <millis>1528810134358</millis>
-  <nanos>704200</nanos>
-  <sequence>21</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
-  <method>invoke</method>
-  <thread>19</thread>
-  <message> public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params </message>
-</record>
-<record>
-  <date>2018-06-12T13:28:54.359703500Z</date>
-  <millis>1528810134359</millis>
-  <nanos>703500</nanos>
-  <sequence>22</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
-  <method>collide</method>
-  <thread>19</thread>
-  <message>Collision Between:MasterSquirrel | ID 62 | Energy 970 | LOC: X 7 | LOC: Y 13 and Wall | ID 48 | Energy -10 | LOC: X 7 | LOC: Y 14</message>
-</record>
-<record>
-  <date>2018-06-12T13:28:54.360704400Z</date>
-  <millis>1528810134360</millis>
-  <nanos>704400</nanos>
-  <sequence>23</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
-  <method>invoke</method>
-  <thread>19</thread>
-  <message> public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params </message>
-</record>
-<record>
-  <date>2018-06-12T13:28:54.362173600Z</date>
-  <millis>1528810134362</millis>
-  <nanos>173600</nanos>
-  <sequence>24</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
-  <method>collide</method>
-  <thread>19</thread>
-  <message>Collision Between:MasterSquirrel | ID 63 | Energy 990 | LOC: X 5 | LOC: Y 13 and Wall | ID 46 | Energy -10 | LOC: X 5 | LOC: Y 14</message>
-</record>
-<record>
-  <date>2018-06-12T13:28:54.362708500Z</date>
-  <millis>1528810134362</millis>
-  <nanos>708500</nanos>
-  <sequence>25</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
-  <method>invoke</method>
-  <thread>19</thread>
-  <message> public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params </message>
-</record>
-<record>
-  <date>2018-06-12T13:28:54.364705700Z</date>
-  <millis>1528810134364</millis>
-  <nanos>705700</nanos>
-  <sequence>26</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
-  <method>collide</method>
-  <thread>19</thread>
-  <message>Collision Between:MasterSquirrel | ID 63 | Energy 980 | LOC: X 5 | LOC: Y 13 and Wall | ID 46 | Energy -10 | LOC: X 5 | LOC: Y 14</message>
-</record>
-<record>
-  <date>2018-06-12T13:28:54.866612900Z</date>
-  <millis>1528810134866</millis>
-  <nanos>612900</nanos>
-  <sequence>27</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
-  <method>invoke</method>
-  <thread>19</thread>
-  <message> public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params </message>
-</record>
-<record>
-  <date>2018-06-12T13:28:54.870585600Z</date>
-  <millis>1528810134870</millis>
-  <nanos>585600</nanos>
-  <sequence>28</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
-  <method>collide</method>
-  <thread>19</thread>
-  <message>Collision Between:MasterSquirrel | ID 60 | Energy 970 | LOC: X 4 | LOC: Y 13 and Wall | ID 45 | Energy -10 | LOC: X 4 | LOC: Y 14</message>
-</record>
-<record>
-  <date>2018-06-12T13:28:54.875584Z</date>
-  <millis>1528810134875</millis>
-  <nanos>584000</nanos>
-  <sequence>29</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
-  <method>invoke</method>
-  <thread>19</thread>
-  <message> public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params </message>
-</record>
-<record>
-  <date>2018-06-12T13:28:54.878589900Z</date>
-  <millis>1528810134878</millis>
-  <nanos>589900</nanos>
-  <sequence>30</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
-  <method>collide</method>
-  <thread>19</thread>
-  <message>Collision Between:MasterSquirrel | ID 60 | Energy 960 | LOC: X 4 | LOC: Y 13 and Wall | ID 45 | Energy -10 | LOC: X 4 | LOC: Y 14</message>
-</record>
-<record>
-  <date>2018-06-12T13:28:54.888589600Z</date>
-  <millis>1528810134888</millis>
-  <nanos>589600</nanos>
-  <sequence>31</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
-  <method>invoke</method>
-  <thread>19</thread>
-  <message> public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params </message>
-</record>
-<record>
-  <date>2018-06-12T13:28:54.891584800Z</date>
-  <millis>1528810134891</millis>
-  <nanos>584800</nanos>
-  <sequence>32</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
-  <method>invoke</method>
-  <thread>19</thread>
-  <message> public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params </message>
-</record>
-<record>
-  <date>2018-06-12T13:28:54.895584800Z</date>
-  <millis>1528810134895</millis>
-  <nanos>584800</nanos>
-  <sequence>33</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
-  <method>invoke</method>
-  <thread>19</thread>
-  <message> public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params </message>
-</record>
-<record>
-  <date>2018-06-12T13:28:54.897585700Z</date>
-  <millis>1528810134897</millis>
-  <nanos>585700</nanos>
-  <sequence>34</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
-  <method>collide</method>
-  <thread>19</thread>
-  <message>Collision Between:MasterSquirrel | ID 62 | Energy 960 | LOC: X 7 | LOC: Y 13 and Wall | ID 48 | Energy -10 | LOC: X 7 | LOC: Y 14</message>
-</record>
-<record>
-  <date>2018-06-12T13:28:54.899583800Z</date>
-  <millis>1528810134899</millis>
-  <nanos>583800</nanos>
-  <sequence>35</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
-  <method>invoke</method>
-  <thread>19</thread>
-  <message> public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params </message>
-</record>
-<record>
-  <date>2018-06-12T13:28:54.901584900Z</date>
-  <millis>1528810134901</millis>
-  <nanos>584900</nanos>
-  <sequence>36</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
-  <method>collide</method>
-  <thread>19</thread>
-  <message>Collision Between:MasterSquirrel | ID 62 | Energy 950 | LOC: X 7 | LOC: Y 13 and Wall | ID 48 | Energy -10 | LOC: X 7 | LOC: Y 14</message>
-</record>
-<record>
-  <date>2018-06-12T13:28:54.902586Z</date>
-  <millis>1528810134902</millis>
-  <nanos>586000</nanos>
-  <sequence>37</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
-  <method>invoke</method>
-  <thread>19</thread>
-  <message> public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params </message>
-</record>
-<record>
-  <date>2018-06-12T13:28:54.904589100Z</date>
-  <millis>1528810134904</millis>
-  <nanos>589100</nanos>
-  <sequence>38</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
-  <method>collide</method>
-  <thread>19</thread>
-  <message>Collision Between:MasterSquirrel | ID 63 | Energy 970 | LOC: X 5 | LOC: Y 13 and Wall | ID 46 | Energy -10 | LOC: X 5 | LOC: Y 14</message>
-</record>
-<record>
-  <date>2018-06-12T13:28:54.906584900Z</date>
-  <millis>1528810134906</millis>
-  <nanos>584900</nanos>
-  <sequence>39</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
-  <method>invoke</method>
-  <thread>19</thread>
-  <message> public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params </message>
-</record>
-<record>
-  <date>2018-06-12T13:28:54.908584800Z</date>
-  <millis>1528810134908</millis>
-  <nanos>584800</nanos>
-  <sequence>40</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
-  <method>collide</method>
-  <thread>19</thread>
-  <message>Collision Between:MasterSquirrel | ID 63 | Energy 960 | LOC: X 5 | LOC: Y 13 and Wall | ID 46 | Energy -10 | LOC: X 5 | LOC: Y 14</message>
-</record>
-<record>
-  <date>2018-06-12T13:28:55.211004500Z</date>
-  <millis>1528810135211</millis>
-  <nanos>4500</nanos>
-  <sequence>41</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.entities.BadBeast</class>
-  <method>nextStep</method>
-  <thread>22</thread>
-  <message>BadBeast 120 starts chase</message>
-</record>
-<record>
-  <date>2018-06-12T13:28:55.412453600Z</date>
-  <millis>1528810135412</millis>
-  <nanos>453600</nanos>
-  <sequence>42</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
-  <method>invoke</method>
-  <thread>19</thread>
-  <message> public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params </message>
-</record>
-<record>
-  <date>2018-06-12T13:28:55.416671200Z</date>
-  <millis>1528810135416</millis>
-  <nanos>671200</nanos>
-  <sequence>43</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
-  <method>collide</method>
-  <thread>19</thread>
-  <message>Collision Between:MasterSquirrel | ID 60 | Energy 950 | LOC: X 4 | LOC: Y 13 and Wall | ID 45 | Energy -10 | LOC: X 4 | LOC: Y 14</message>
-</record>
-<record>
-  <date>2018-06-12T13:28:55.419300100Z</date>
-  <millis>1528810135419</millis>
-  <nanos>300100</nanos>
-  <sequence>44</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
-  <method>invoke</method>
-  <thread>19</thread>
-  <message> public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params </message>
-</record>
-<record>
-  <date>2018-06-12T13:28:55.421300700Z</date>
-  <millis>1528810135421</millis>
-  <nanos>300700</nanos>
-  <sequence>45</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
-  <method>collide</method>
-  <thread>19</thread>
-  <message>Collision Between:MasterSquirrel | ID 60 | Energy 940 | LOC: X 4 | LOC: Y 13 and Wall | ID 45 | Energy -10 | LOC: X 4 | LOC: Y 14</message>
-</record>
-<record>
-  <date>2018-06-12T13:28:55.424852500Z</date>
-  <millis>1528810135424</millis>
-  <nanos>852500</nanos>
-  <sequence>46</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
-  <method>invoke</method>
-  <thread>19</thread>
-  <message> public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params </message>
-</record>
-<record>
-  <date>2018-06-12T13:28:55.427301Z</date>
-  <millis>1528810135427</millis>
-  <nanos>301000</nanos>
-  <sequence>47</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
-  <method>invoke</method>
-  <thread>19</thread>
-  <message> public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params </message>
-</record>
-<record>
-  <date>2018-06-12T13:28:55.429554600Z</date>
-  <millis>1528810135429</millis>
-  <nanos>554600</nanos>
-  <sequence>48</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
-  <method>collide</method>
-  <thread>19</thread>
-  <message>Collision Between:MasterSquirrel | ID 61 | Energy 1000 | LOC: X 8 | LOC: Y 13 and Wall | ID 49 | Energy -10 | LOC: X 8 | LOC: Y 14</message>
-</record>
-<record>
-  <date>2018-06-12T13:28:55.431297800Z</date>
-  <millis>1528810135431</millis>
-  <nanos>297800</nanos>
-  <sequence>49</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
-  <method>invoke</method>
-  <thread>19</thread>
-  <message> public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params </message>
-</record>
-<record>
-  <date>2018-06-12T13:28:55.434301700Z</date>
-  <millis>1528810135434</millis>
-  <nanos>301700</nanos>
-  <sequence>50</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
-  <method>collide</method>
-  <thread>19</thread>
-  <message>Collision Between:MasterSquirrel | ID 62 | Energy 940 | LOC: X 7 | LOC: Y 13 and Wall | ID 48 | Energy -10 | LOC: X 7 | LOC: Y 14</message>
-</record>
-<record>
-  <date>2018-06-12T13:28:55.436353400Z</date>
-  <millis>1528810135436</millis>
-  <nanos>353400</nanos>
-  <sequence>51</sequence>
-=======
-  <date>2018-06-11T14:35:48.450275Z</date>
-  <millis>1528727748450</millis>
-  <nanos>275000</nanos>
+  <date>2018-06-12T14:00:20.480431100Z</date>
+  <millis>1528812020480</millis>
+  <nanos>431100</nanos>
   <sequence>0</sequence>
   <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
   <level>INFO</level>
@@ -632,716 +14,1875 @@
   <message>MasterSquirrelBot created</message>
 </record>
 <record>
-  <date>2018-06-11T14:35:48.503274600Z</date>
-  <millis>1528727748503</millis>
-  <nanos>274600</nanos>
+  <date>2018-06-12T14:00:20.531243700Z</date>
+  <millis>1528812020531</millis>
+  <nanos>243700</nanos>
   <sequence>1</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.botapi.TestBotFactory</class>
+  <method>createMasterBotController</method>
+  <thread>1</thread>
+  <message>MasterSquirrelBot created</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:20.532250100Z</date>
+  <millis>1528812020532</millis>
+  <nanos>250100</nanos>
+  <sequence>2</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.botapi.TestBotFactory</class>
+  <method>createMasterBotController</method>
+  <thread>1</thread>
+  <message>MasterSquirrelBot created</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:20.534250400Z</date>
+  <millis>1528812020534</millis>
+  <nanos>250400</nanos>
+  <sequence>3</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.botapi.TestBotFactory</class>
+  <method>createMasterBotController</method>
+  <thread>1</thread>
+  <message>MasterSquirrelBot created</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:20.541248900Z</date>
+  <millis>1528812020541</millis>
+  <nanos>248900</nanos>
+  <sequence>4</sequence>
   <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
   <level>INFO</level>
   <class>de.hsa.games.fatsquirrel.core.Launcher</class>
   <method>main</method>
   <thread>1</thread>
-  <message>BotGame launching</message>
+  <message>MultiBotGame launching</message>
 </record>
 <record>
-  <date>2018-06-11T14:35:48.758270Z</date>
-  <millis>1528727748758</millis>
-  <nanos>270000</nanos>
-  <sequence>2</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
-  <method>invoke</method>
-  <thread>19</thread>
-  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@55b9834f</message>
-</record>
-<record>
-  <date>2018-06-11T14:35:48.759269600Z</date>
-  <millis>1528727748759</millis>
-  <nanos>269600</nanos>
-  <sequence>3</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
-  <method>invoke</method>
-  <thread>19</thread>
-  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@406b15a4</message>
-</record>
-<record>
-  <date>2018-06-11T14:35:49.264261Z</date>
-  <millis>1528727749264</millis>
-  <nanos>261000</nanos>
-  <sequence>4</sequence>
->>>>>>> 02c357cc928e3253f23a0df8b773644e31595118
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
-  <method>invoke</method>
-  <thread>19</thread>
-<<<<<<< HEAD
-  <message> public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params </message>
-</record>
-<record>
-  <date>2018-06-12T13:28:55.440294400Z</date>
-  <millis>1528810135440</millis>
-  <nanos>294400</nanos>
-  <sequence>52</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
-  <method>collide</method>
-  <thread>19</thread>
-  <message>Collision Between:MasterSquirrel | ID 62 | Energy 930 | LOC: X 7 | LOC: Y 13 and Wall | ID 48 | Energy -10 | LOC: X 7 | LOC: Y 14</message>
-</record>
-<record>
-  <date>2018-06-12T13:28:55.451295100Z</date>
-  <millis>1528810135451</millis>
-  <nanos>295100</nanos>
-  <sequence>53</sequence>
-=======
-  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@68ca1550</message>
-</record>
-<record>
-  <date>2018-06-11T14:35:49.266260700Z</date>
-  <millis>1528727749266</millis>
-  <nanos>260700</nanos>
+  <date>2018-06-12T14:00:20.801281Z</date>
+  <millis>1528812020801</millis>
+  <nanos>281000</nanos>
   <sequence>5</sequence>
->>>>>>> 02c357cc928e3253f23a0df8b773644e31595118
   <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
   <level>INFO</level>
   <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
   <method>invoke</method>
   <thread>19</thread>
-<<<<<<< HEAD
-  <message> public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params </message>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@54a128d5</message>
 </record>
 <record>
-  <date>2018-06-12T13:28:55.452290200Z</date>
-  <millis>1528810135452</millis>
-  <nanos>290200</nanos>
-  <sequence>54</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
-  <method>collide</method>
-  <thread>19</thread>
-  <message>Collision Between:MasterSquirrel | ID 63 | Energy 950 | LOC: X 5 | LOC: Y 13 and Wall | ID 46 | Energy -10 | LOC: X 5 | LOC: Y 14</message>
-</record>
-<record>
-  <date>2018-06-12T13:28:55.455908600Z</date>
-  <millis>1528810135455</millis>
-  <nanos>908600</nanos>
-  <sequence>55</sequence>
-=======
-  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@471d6b79</message>
-</record>
-<record>
-  <date>2018-06-11T14:35:49.768257800Z</date>
-  <millis>1528727749768</millis>
-  <nanos>257800</nanos>
+  <date>2018-06-12T14:00:20.810253300Z</date>
+  <millis>1528812020810</millis>
+  <nanos>253300</nanos>
   <sequence>6</sequence>
->>>>>>> 02c357cc928e3253f23a0df8b773644e31595118
   <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
   <level>INFO</level>
   <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
   <method>invoke</method>
   <thread>19</thread>
-<<<<<<< HEAD
-  <message> public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params </message>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@5f381df</message>
 </record>
 <record>
-  <date>2018-06-12T13:28:55.457295400Z</date>
-  <millis>1528810135457</millis>
-  <nanos>295400</nanos>
-  <sequence>56</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
-  <method>collide</method>
-  <thread>19</thread>
-  <message>Collision Between:MasterSquirrel | ID 63 | Energy 940 | LOC: X 5 | LOC: Y 13 and Wall | ID 46 | Energy -10 | LOC: X 5 | LOC: Y 14</message>
-</record>
-<record>
-  <date>2018-06-12T13:28:55.961793300Z</date>
-  <millis>1528810135961</millis>
-  <nanos>793300</nanos>
-  <sequence>57</sequence>
-=======
-  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@23df522e</message>
-</record>
-<record>
-  <date>2018-06-11T14:35:49.770252800Z</date>
-  <millis>1528727749770</millis>
-  <nanos>252800</nanos>
+  <date>2018-06-12T14:00:20.811271900Z</date>
+  <millis>1528812020811</millis>
+  <nanos>271900</nanos>
   <sequence>7</sequence>
->>>>>>> 02c357cc928e3253f23a0df8b773644e31595118
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
-  <method>invoke</method>
-  <thread>19</thread>
-<<<<<<< HEAD
-  <message> public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params </message>
-</record>
-<record>
-  <date>2018-06-12T13:28:55.966791500Z</date>
-  <millis>1528810135966</millis>
-  <nanos>791500</nanos>
-  <sequence>58</sequence>
   <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
   <level>INFO</level>
   <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
   <method>collide</method>
   <thread>19</thread>
-  <message>Collision Between:MasterSquirrel | ID 60 | Energy 930 | LOC: X 4 | LOC: Y 13 and Wall | ID 45 | Energy -10 | LOC: X 4 | LOC: Y 14</message>
+  <message>Collision Between:MasterSquirrel | ID 208 | Energy 1000 | LOC: X 44 | LOC: Y 48 and Wall | ID 190 | Energy -10 | LOC: X 44 | LOC: Y 49</message>
 </record>
 <record>
-  <date>2018-06-12T13:28:55.969792600Z</date>
-  <millis>1528810135969</millis>
-  <nanos>792600</nanos>
-  <sequence>59</sequence>
-=======
-  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@74da64e6</message>
-</record>
-<record>
-  <date>2018-06-11T14:35:50.273242500Z</date>
-  <millis>1528727750273</millis>
-  <nanos>242500</nanos>
+  <date>2018-06-12T14:00:20.812255100Z</date>
+  <millis>1528812020812</millis>
+  <nanos>255100</nanos>
   <sequence>8</sequence>
->>>>>>> 02c357cc928e3253f23a0df8b773644e31595118
   <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
   <level>INFO</level>
   <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
   <method>invoke</method>
   <thread>19</thread>
-<<<<<<< HEAD
-  <message> public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params </message>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@20f87929</message>
 </record>
 <record>
-  <date>2018-06-12T13:28:55.971791700Z</date>
-  <millis>1528810135971</millis>
-  <nanos>791700</nanos>
-  <sequence>60</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
-  <method>collide</method>
-  <thread>19</thread>
-  <message>Collision Between:MasterSquirrel | ID 60 | Energy 920 | LOC: X 4 | LOC: Y 13 and Wall | ID 45 | Energy -10 | LOC: X 4 | LOC: Y 14</message>
-</record>
-<record>
-  <date>2018-06-12T13:28:55.974793200Z</date>
-  <millis>1528810135974</millis>
-  <nanos>793200</nanos>
-  <sequence>61</sequence>
-=======
-  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@4c829fb8</message>
-</record>
-<record>
-  <date>2018-06-11T14:35:50.274242600Z</date>
-  <millis>1528727750274</millis>
-  <nanos>242600</nanos>
+  <date>2018-06-12T14:00:20.813252700Z</date>
+  <millis>1528812020813</millis>
+  <nanos>252700</nanos>
   <sequence>9</sequence>
->>>>>>> 02c357cc928e3253f23a0df8b773644e31595118
   <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
   <level>INFO</level>
   <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
   <method>invoke</method>
   <thread>19</thread>
-<<<<<<< HEAD
-  <message> public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params </message>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@7d420a63</message>
 </record>
 <record>
-  <date>2018-06-12T13:28:55.976793200Z</date>
-  <millis>1528810135976</millis>
-  <nanos>793200</nanos>
-  <sequence>62</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
-  <method>collide</method>
-  <thread>19</thread>
-  <message>Collision Between:MasterSquirrel | ID 61 | Energy 990 | LOC: X 8 | LOC: Y 13 and Wall | ID 49 | Energy -10 | LOC: X 8 | LOC: Y 14</message>
-</record>
-<record>
-  <date>2018-06-12T13:28:55.978790600Z</date>
-  <millis>1528810135978</millis>
-  <nanos>790600</nanos>
-  <sequence>63</sequence>
-=======
-  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@60e873f2</message>
-</record>
-<record>
-  <date>2018-06-11T14:35:50.792233600Z</date>
-  <millis>1528727750792</millis>
-  <nanos>233600</nanos>
+  <date>2018-06-12T14:00:20.814251500Z</date>
+  <millis>1528812020814</millis>
+  <nanos>251500</nanos>
   <sequence>10</sequence>
->>>>>>> 02c357cc928e3253f23a0df8b773644e31595118
   <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
   <level>INFO</level>
   <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
   <method>invoke</method>
   <thread>19</thread>
-<<<<<<< HEAD
-  <message> public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params </message>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@718c536a</message>
 </record>
 <record>
-  <date>2018-06-12T13:28:55.980791Z</date>
-  <millis>1528810135980</millis>
-  <nanos>791000</nanos>
-  <sequence>64</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
-  <method>collide</method>
-  <thread>19</thread>
-  <message>Collision Between:MasterSquirrel | ID 61 | Energy 980 | LOC: X 8 | LOC: Y 13 and Wall | ID 49 | Energy -10 | LOC: X 8 | LOC: Y 14</message>
-</record>
-<record>
-  <date>2018-06-12T13:28:55.982944500Z</date>
-  <millis>1528810135982</millis>
-  <nanos>944500</nanos>
-  <sequence>65</sequence>
-=======
-  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@397f13e3</message>
-</record>
-<record>
-  <date>2018-06-11T14:35:50.794233600Z</date>
-  <millis>1528727750794</millis>
-  <nanos>233600</nanos>
+  <date>2018-06-12T14:00:20.815253200Z</date>
+  <millis>1528812020815</millis>
+  <nanos>253200</nanos>
   <sequence>11</sequence>
->>>>>>> 02c357cc928e3253f23a0df8b773644e31595118
   <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
   <level>INFO</level>
   <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
   <method>invoke</method>
   <thread>19</thread>
-<<<<<<< HEAD
-  <message> public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params </message>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@68e8c9fd</message>
 </record>
 <record>
-  <date>2018-06-12T13:28:55.984793500Z</date>
-  <millis>1528810135984</millis>
-  <nanos>793500</nanos>
-  <sequence>66</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
-  <method>collide</method>
-  <thread>19</thread>
-  <message>Collision Between:MasterSquirrel | ID 62 | Energy 920 | LOC: X 7 | LOC: Y 13 and Wall | ID 48 | Energy -10 | LOC: X 7 | LOC: Y 14</message>
-</record>
-<record>
-  <date>2018-06-12T13:28:55.985794600Z</date>
-  <millis>1528810135985</millis>
-  <nanos>794600</nanos>
-  <sequence>67</sequence>
-=======
-  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@1e25ad7e</message>
-</record>
-<record>
-  <date>2018-06-11T14:35:51.296229500Z</date>
-  <millis>1528727751296</millis>
-  <nanos>229500</nanos>
+  <date>2018-06-12T14:00:20.817250700Z</date>
+  <millis>1528812020817</millis>
+  <nanos>250700</nanos>
   <sequence>12</sequence>
->>>>>>> 02c357cc928e3253f23a0df8b773644e31595118
   <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
   <level>INFO</level>
   <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
   <method>invoke</method>
   <thread>19</thread>
-<<<<<<< HEAD
-  <message> public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params </message>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@bbac4f8</message>
 </record>
 <record>
-  <date>2018-06-12T13:28:55.988795600Z</date>
-  <millis>1528810135988</millis>
-  <nanos>795600</nanos>
-  <sequence>68</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
-  <method>collide</method>
-  <thread>19</thread>
-  <message>Collision Between:MasterSquirrel | ID 62 | Energy 910 | LOC: X 7 | LOC: Y 13 and Wall | ID 48 | Energy -10 | LOC: X 7 | LOC: Y 14</message>
-</record>
-<record>
-  <date>2018-06-12T13:28:55.990790600Z</date>
-  <millis>1528810135990</millis>
-  <nanos>790600</nanos>
-  <sequence>69</sequence>
-=======
-  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@46028e5d</message>
-</record>
-<record>
-  <date>2018-06-11T14:35:51.297224700Z</date>
-  <millis>1528727751297</millis>
-  <nanos>224700</nanos>
+  <date>2018-06-12T14:00:20.818248900Z</date>
+  <millis>1528812020818</millis>
+  <nanos>248900</nanos>
   <sequence>13</sequence>
->>>>>>> 02c357cc928e3253f23a0df8b773644e31595118
   <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
   <level>INFO</level>
   <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
   <method>invoke</method>
   <thread>19</thread>
-<<<<<<< HEAD
-  <message> public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params </message>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@6646c6fe</message>
 </record>
 <record>
-  <date>2018-06-12T13:28:55.992791Z</date>
-  <millis>1528810135992</millis>
-  <nanos>791000</nanos>
-  <sequence>70</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
-  <method>collide</method>
-  <thread>19</thread>
-  <message>Collision Between:MasterSquirrel | ID 63 | Energy 930 | LOC: X 5 | LOC: Y 13 and Wall | ID 46 | Energy -10 | LOC: X 5 | LOC: Y 14</message>
-</record>
-<record>
-  <date>2018-06-12T13:28:55.995029400Z</date>
-  <millis>1528810135995</millis>
-  <nanos>29400</nanos>
-  <sequence>71</sequence>
-=======
-  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@6556128c</message>
-</record>
-<record>
-  <date>2018-06-11T14:35:51.800214900Z</date>
-  <millis>1528727751800</millis>
-  <nanos>214900</nanos>
+  <date>2018-06-12T14:00:21.320612400Z</date>
+  <millis>1528812021320</millis>
+  <nanos>612400</nanos>
   <sequence>14</sequence>
->>>>>>> 02c357cc928e3253f23a0df8b773644e31595118
   <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
   <level>INFO</level>
   <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
   <method>invoke</method>
   <thread>19</thread>
-<<<<<<< HEAD
-  <message> public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params </message>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@56aa83a7</message>
 </record>
 <record>
-  <date>2018-06-12T13:28:55.996792400Z</date>
-  <millis>1528810135996</millis>
-  <nanos>792400</nanos>
-  <sequence>72</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
-  <method>collide</method>
-  <thread>19</thread>
-  <message>Collision Between:MasterSquirrel | ID 63 | Energy 920 | LOC: X 5 | LOC: Y 13 and Wall | ID 46 | Energy -10 | LOC: X 5 | LOC: Y 14</message>
-</record>
-<record>
-  <date>2018-06-12T13:28:56.499606400Z</date>
-  <millis>1528810136499</millis>
-  <nanos>606400</nanos>
-  <sequence>73</sequence>
-=======
-  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@24f7f5ce</message>
-</record>
-<record>
-  <date>2018-06-11T14:35:51.801215700Z</date>
-  <millis>1528727751801</millis>
-  <nanos>215700</nanos>
+  <date>2018-06-12T14:00:21.324619100Z</date>
+  <millis>1528812021324</millis>
+  <nanos>619100</nanos>
   <sequence>15</sequence>
->>>>>>> 02c357cc928e3253f23a0df8b773644e31595118
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
-  <method>invoke</method>
-  <thread>19</thread>
-<<<<<<< HEAD
-  <message> public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params </message>
-</record>
-<record>
-  <date>2018-06-12T13:28:56.501871100Z</date>
-  <millis>1528810136501</millis>
-  <nanos>871100</nanos>
-  <sequence>74</sequence>
   <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
   <level>INFO</level>
   <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
   <method>collide</method>
   <thread>19</thread>
-  <message>Collision Between:MasterSquirrel | ID 60 | Energy 910 | LOC: X 4 | LOC: Y 13 and Wall | ID 45 | Energy -10 | LOC: X 4 | LOC: Y 14</message>
+  <message>Collision Between:MasterSquirrel | ID 208 | Energy 990 | LOC: X 44 | LOC: Y 48 and Wall | ID 190 | Energy -10 | LOC: X 44 | LOC: Y 49</message>
 </record>
 <record>
-  <date>2018-06-12T13:28:56.503556100Z</date>
-  <millis>1528810136503</millis>
-  <nanos>556100</nanos>
-  <sequence>75</sequence>
-=======
-  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@178ae273</message>
-</record>
-<record>
-  <date>2018-06-11T14:35:52.304207100Z</date>
-  <millis>1528727752304</millis>
-  <nanos>207100</nanos>
+  <date>2018-06-12T14:00:21.326852200Z</date>
+  <millis>1528812021326</millis>
+  <nanos>852200</nanos>
   <sequence>16</sequence>
->>>>>>> 02c357cc928e3253f23a0df8b773644e31595118
   <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
   <level>INFO</level>
   <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
   <method>invoke</method>
   <thread>19</thread>
-<<<<<<< HEAD
-  <message> public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params </message>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@35790f1b</message>
 </record>
 <record>
-  <date>2018-06-12T13:28:56.505562300Z</date>
-  <millis>1528810136505</millis>
-  <nanos>562300</nanos>
-  <sequence>76</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
-  <method>collide</method>
-  <thread>19</thread>
-  <message>Collision Between:MasterSquirrel | ID 60 | Energy 900 | LOC: X 4 | LOC: Y 13 and Wall | ID 45 | Energy -10 | LOC: X 4 | LOC: Y 14</message>
-</record>
-<record>
-  <date>2018-06-12T13:28:56.507564600Z</date>
-  <millis>1528810136507</millis>
-  <nanos>564600</nanos>
-  <sequence>77</sequence>
-=======
-  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@45a8f6b9</message>
-</record>
-<record>
-  <date>2018-06-11T14:35:52.305206600Z</date>
-  <millis>1528727752305</millis>
-  <nanos>206600</nanos>
+  <date>2018-06-12T14:00:21.328620800Z</date>
+  <millis>1528812021328</millis>
+  <nanos>620800</nanos>
   <sequence>17</sequence>
->>>>>>> 02c357cc928e3253f23a0df8b773644e31595118
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
-  <method>invoke</method>
-  <thread>19</thread>
-<<<<<<< HEAD
-  <message> public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params </message>
-</record>
-<record>
-  <date>2018-06-12T13:28:56.509560900Z</date>
-  <millis>1528810136509</millis>
-  <nanos>560900</nanos>
-  <sequence>78</sequence>
   <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
   <level>INFO</level>
   <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
   <method>collide</method>
   <thread>19</thread>
-  <message>Collision Between:MasterSquirrel | ID 61 | Energy 970 | LOC: X 8 | LOC: Y 13 and Wall | ID 49 | Energy -10 | LOC: X 8 | LOC: Y 14</message>
+  <message>Collision Between:MasterSquirrel | ID 208 | Energy 980 | LOC: X 44 | LOC: Y 48 and Wall | ID 190 | Energy -10 | LOC: X 44 | LOC: Y 49</message>
 </record>
 <record>
-  <date>2018-06-12T13:28:56.510560700Z</date>
-  <millis>1528810136510</millis>
-  <nanos>560700</nanos>
-  <sequence>79</sequence>
-=======
-  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@10bf4ef2</message>
-</record>
-<record>
-  <date>2018-06-11T14:35:52.809197900Z</date>
-  <millis>1528727752809</millis>
-  <nanos>197900</nanos>
+  <date>2018-06-12T14:00:21.329618500Z</date>
+  <millis>1528812021329</millis>
+  <nanos>618500</nanos>
   <sequence>18</sequence>
->>>>>>> 02c357cc928e3253f23a0df8b773644e31595118
   <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
   <level>INFO</level>
   <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
   <method>invoke</method>
   <thread>19</thread>
-<<<<<<< HEAD
-  <message> public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params </message>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@3402ed11</message>
 </record>
 <record>
-  <date>2018-06-12T13:28:56.512560300Z</date>
-  <millis>1528810136512</millis>
-  <nanos>560300</nanos>
-  <sequence>80</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
-  <method>collide</method>
-  <thread>19</thread>
-  <message>Collision Between:MasterSquirrel | ID 61 | Energy 960 | LOC: X 8 | LOC: Y 13 and Wall | ID 49 | Energy -10 | LOC: X 8 | LOC: Y 14</message>
-</record>
-<record>
-  <date>2018-06-12T13:28:56.514560600Z</date>
-  <millis>1528810136514</millis>
-  <nanos>560600</nanos>
-  <sequence>81</sequence>
-=======
-  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@49bb483b</message>
-</record>
-<record>
-  <date>2018-06-11T14:35:52.810197400Z</date>
-  <millis>1528727752810</millis>
-  <nanos>197400</nanos>
+  <date>2018-06-12T14:00:21.331648700Z</date>
+  <millis>1528812021331</millis>
+  <nanos>648700</nanos>
   <sequence>19</sequence>
->>>>>>> 02c357cc928e3253f23a0df8b773644e31595118
   <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
   <level>INFO</level>
   <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
   <method>invoke</method>
   <thread>19</thread>
-<<<<<<< HEAD
-  <message> public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params </message>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@6c74e19b</message>
 </record>
 <record>
-  <date>2018-06-12T13:28:56.515561400Z</date>
-  <millis>1528810136515</millis>
-  <nanos>561400</nanos>
-  <sequence>82</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
-  <method>collide</method>
-  <thread>19</thread>
-  <message>Collision Between:MasterSquirrel | ID 62 | Energy 900 | LOC: X 7 | LOC: Y 13 and Wall | ID 48 | Energy -10 | LOC: X 7 | LOC: Y 14</message>
-</record>
-<record>
-  <date>2018-06-12T13:28:56.517557Z</date>
-  <millis>1528810136517</millis>
-  <nanos>557000</nanos>
-  <sequence>83</sequence>
-=======
-  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@23195720</message>
-</record>
-<record>
-  <date>2018-06-11T14:35:53.312195400Z</date>
-  <millis>1528727753312</millis>
-  <nanos>195400</nanos>
+  <date>2018-06-12T14:00:21.333617Z</date>
+  <millis>1528812021333</millis>
+  <nanos>617000</nanos>
   <sequence>20</sequence>
->>>>>>> 02c357cc928e3253f23a0df8b773644e31595118
   <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
   <level>INFO</level>
   <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
   <method>invoke</method>
   <thread>19</thread>
-<<<<<<< HEAD
-  <message> public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params </message>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@6ec1f009</message>
 </record>
 <record>
-  <date>2018-06-12T13:28:56.519561100Z</date>
-  <millis>1528810136519</millis>
-  <nanos>561100</nanos>
-  <sequence>84</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
-  <method>collide</method>
-  <thread>19</thread>
-  <message>Collision Between:MasterSquirrel | ID 62 | Energy 890 | LOC: X 7 | LOC: Y 13 and Wall | ID 48 | Energy -10 | LOC: X 7 | LOC: Y 14</message>
-</record>
-<record>
-  <date>2018-06-12T13:28:56.520559300Z</date>
-  <millis>1528810136520</millis>
-  <nanos>559300</nanos>
-  <sequence>85</sequence>
-=======
-  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@4486db1d</message>
-</record>
-<record>
-  <date>2018-06-11T14:35:53.313189100Z</date>
-  <millis>1528727753313</millis>
-  <nanos>189100</nanos>
+  <date>2018-06-12T14:00:21.335619600Z</date>
+  <millis>1528812021335</millis>
+  <nanos>619600</nanos>
   <sequence>21</sequence>
   <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
   <level>INFO</level>
   <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
   <method>invoke</method>
   <thread>19</thread>
-  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@2c5c5367</message>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@133d3b1d</message>
 </record>
 <record>
-  <date>2018-06-11T14:35:53.818179700Z</date>
-  <millis>1528727753818</millis>
-  <nanos>179700</nanos>
+  <date>2018-06-12T14:00:21.337816800Z</date>
+  <millis>1528812021337</millis>
+  <nanos>816800</nanos>
   <sequence>22</sequence>
->>>>>>> 02c357cc928e3253f23a0df8b773644e31595118
   <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
   <level>INFO</level>
   <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
   <method>invoke</method>
   <thread>19</thread>
-<<<<<<< HEAD
-  <message> public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params </message>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@3074360e</message>
 </record>
 <record>
-  <date>2018-06-12T13:28:56.522560400Z</date>
-  <millis>1528810136522</millis>
-  <nanos>560400</nanos>
-  <sequence>86</sequence>
-  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
-  <level>INFO</level>
-  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
-  <method>collide</method>
-  <thread>19</thread>
-  <message>Collision Between:MasterSquirrel | ID 63 | Energy 910 | LOC: X 5 | LOC: Y 13 and Wall | ID 46 | Energy -10 | LOC: X 5 | LOC: Y 14</message>
-</record>
-<record>
-  <date>2018-06-12T13:28:56.524561900Z</date>
-  <millis>1528810136524</millis>
-  <nanos>561900</nanos>
-  <sequence>87</sequence>
-=======
-  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@3f352c47</message>
-</record>
-<record>
-  <date>2018-06-11T14:35:53.819179500Z</date>
-  <millis>1528727753819</millis>
-  <nanos>179500</nanos>
+  <date>2018-06-12T14:00:21.339621100Z</date>
+  <millis>1528812021339</millis>
+  <nanos>621100</nanos>
   <sequence>23</sequence>
   <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
   <level>INFO</level>
   <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
   <method>invoke</method>
   <thread>19</thread>
-  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@567cdcd6</message>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@7b4771a2</message>
 </record>
 <record>
-  <date>2018-06-11T14:35:54.321170800Z</date>
-  <millis>1528727754321</millis>
-  <nanos>170800</nanos>
+  <date>2018-06-12T14:00:21.843969300Z</date>
+  <millis>1528812021843</millis>
+  <nanos>969300</nanos>
   <sequence>24</sequence>
->>>>>>> 02c357cc928e3253f23a0df8b773644e31595118
   <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
   <level>INFO</level>
   <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
   <method>invoke</method>
   <thread>19</thread>
-<<<<<<< HEAD
-  <message> public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params </message>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@71ad2cbe</message>
 </record>
 <record>
-  <date>2018-06-12T13:28:56.525561300Z</date>
-  <millis>1528810136525</millis>
-  <nanos>561300</nanos>
-  <sequence>88</sequence>
+  <date>2018-06-12T14:00:21.845961800Z</date>
+  <millis>1528812021845</millis>
+  <nanos>961800</nanos>
+  <sequence>25</sequence>
   <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
   <level>INFO</level>
   <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
   <method>collide</method>
   <thread>19</thread>
-  <message>Collision Between:MasterSquirrel | ID 63 | Energy 900 | LOC: X 5 | LOC: Y 13 and Wall | ID 46 | Energy -10 | LOC: X 5 | LOC: Y 14</message>
-=======
-  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@24d0ab37</message>
+  <message>Collision Between:MasterSquirrel | ID 208 | Energy 970 | LOC: X 44 | LOC: Y 48 and Wall | ID 190 | Energy -10 | LOC: X 44 | LOC: Y 49</message>
 </record>
 <record>
-  <date>2018-06-11T14:35:54.322170300Z</date>
-  <millis>1528727754322</millis>
-  <nanos>170300</nanos>
-  <sequence>25</sequence>
+  <date>2018-06-12T14:00:21.849130200Z</date>
+  <millis>1528812021849</millis>
+  <nanos>130200</nanos>
+  <sequence>26</sequence>
   <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
   <level>INFO</level>
   <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
   <method>invoke</method>
   <thread>19</thread>
-  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@6a5903a1</message>
->>>>>>> 02c357cc928e3253f23a0df8b773644e31595118
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@31279948</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:21.849973300Z</date>
+  <millis>1528812021849</millis>
+  <nanos>973300</nanos>
+  <sequence>27</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
+  <method>collide</method>
+  <thread>19</thread>
+  <message>Collision Between:MasterSquirrel | ID 208 | Energy 960 | LOC: X 44 | LOC: Y 48 and Wall | ID 190 | Energy -10 | LOC: X 44 | LOC: Y 49</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:21.851975500Z</date>
+  <millis>1528812021851</millis>
+  <nanos>975500</nanos>
+  <sequence>28</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@175d0c48</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:21.853970900Z</date>
+  <millis>1528812021853</millis>
+  <nanos>970900</nanos>
+  <sequence>29</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@32170ba0</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:21.855963700Z</date>
+  <millis>1528812021855</millis>
+  <nanos>963700</nanos>
+  <sequence>30</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@2a470980</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:21.857974500Z</date>
+  <millis>1528812021857</millis>
+  <nanos>974500</nanos>
+  <sequence>31</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@27273859</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:21.859962100Z</date>
+  <millis>1528812021859</millis>
+  <nanos>962100</nanos>
+  <sequence>32</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@58e75fb9</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:21.861994900Z</date>
+  <millis>1528812021861</millis>
+  <nanos>994900</nanos>
+  <sequence>33</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@52a7150e</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:22.366308400Z</date>
+  <millis>1528812022366</millis>
+  <nanos>308400</nanos>
+  <sequence>34</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@40be1dd3</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:22.368361600Z</date>
+  <millis>1528812022368</millis>
+  <nanos>361600</nanos>
+  <sequence>35</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
+  <method>collide</method>
+  <thread>19</thread>
+  <message>Collision Between:MasterSquirrel | ID 208 | Energy 950 | LOC: X 44 | LOC: Y 48 and Wall | ID 190 | Energy -10 | LOC: X 44 | LOC: Y 49</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:22.371305300Z</date>
+  <millis>1528812022371</millis>
+  <nanos>305300</nanos>
+  <sequence>36</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@5ec5006d</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:22.373303800Z</date>
+  <millis>1528812022373</millis>
+  <nanos>303800</nanos>
+  <sequence>37</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
+  <method>collide</method>
+  <thread>19</thread>
+  <message>Collision Between:MasterSquirrel | ID 208 | Energy 940 | LOC: X 44 | LOC: Y 48 and Wall | ID 190 | Energy -10 | LOC: X 44 | LOC: Y 49</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:22.375302300Z</date>
+  <millis>1528812022375</millis>
+  <nanos>302300</nanos>
+  <sequence>38</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@3cbd969b</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:22.377337200Z</date>
+  <millis>1528812022377</millis>
+  <nanos>337200</nanos>
+  <sequence>39</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@56d8eb67</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:22.380465400Z</date>
+  <millis>1528812022380</millis>
+  <nanos>465400</nanos>
+  <sequence>40</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@663824ea</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:22.382314700Z</date>
+  <millis>1528812022382</millis>
+  <nanos>314700</nanos>
+  <sequence>41</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@10088628</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:22.384299200Z</date>
+  <millis>1528812022384</millis>
+  <nanos>299200</nanos>
+  <sequence>42</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@4051d3fc</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:22.386584200Z</date>
+  <millis>1528812022386</millis>
+  <nanos>584200</nanos>
+  <sequence>43</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@51c39b42</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:22.889714900Z</date>
+  <millis>1528812022889</millis>
+  <nanos>714900</nanos>
+  <sequence>44</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@767beae4</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:22.891708200Z</date>
+  <millis>1528812022891</millis>
+  <nanos>708200</nanos>
+  <sequence>45</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
+  <method>collide</method>
+  <thread>19</thread>
+  <message>Collision Between:MasterSquirrel | ID 208 | Energy 930 | LOC: X 44 | LOC: Y 48 and Wall | ID 190 | Energy -10 | LOC: X 44 | LOC: Y 49</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:22.892704900Z</date>
+  <millis>1528812022892</millis>
+  <nanos>704900</nanos>
+  <sequence>46</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@22961bc5</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:22.894704500Z</date>
+  <millis>1528812022894</millis>
+  <nanos>704500</nanos>
+  <sequence>47</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
+  <method>collide</method>
+  <thread>19</thread>
+  <message>Collision Between:MasterSquirrel | ID 208 | Energy 920 | LOC: X 44 | LOC: Y 48 and Wall | ID 190 | Energy -10 | LOC: X 44 | LOC: Y 49</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:22.895706500Z</date>
+  <millis>1528812022895</millis>
+  <nanos>706500</nanos>
+  <sequence>48</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@6c16f258</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:22.896710600Z</date>
+  <millis>1528812022896</millis>
+  <nanos>710600</nanos>
+  <sequence>49</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@21c27d13</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:22.898881300Z</date>
+  <millis>1528812022898</millis>
+  <nanos>881300</nanos>
+  <sequence>50</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@8479f05</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:22.900706600Z</date>
+  <millis>1528812022900</millis>
+  <nanos>706600</nanos>
+  <sequence>51</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@1a1df5fb</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:22.901707100Z</date>
+  <millis>1528812022901</millis>
+  <nanos>707100</nanos>
+  <sequence>52</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@41c250d2</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:22.903709700Z</date>
+  <millis>1528812022903</millis>
+  <nanos>709700</nanos>
+  <sequence>53</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@73da871c</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:23.407899100Z</date>
+  <millis>1528812023407</millis>
+  <nanos>899100</nanos>
+  <sequence>54</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@47d191d5</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:23.409892200Z</date>
+  <millis>1528812023409</millis>
+  <nanos>892200</nanos>
+  <sequence>55</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
+  <method>collide</method>
+  <thread>19</thread>
+  <message>Collision Between:MasterSquirrel | ID 208 | Energy 910 | LOC: X 44 | LOC: Y 48 and Wall | ID 190 | Energy -10 | LOC: X 44 | LOC: Y 49</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:23.410909500Z</date>
+  <millis>1528812023410</millis>
+  <nanos>909500</nanos>
+  <sequence>56</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@321606f9</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:23.411907500Z</date>
+  <millis>1528812023411</millis>
+  <nanos>907500</nanos>
+  <sequence>57</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
+  <method>collide</method>
+  <thread>19</thread>
+  <message>Collision Between:MasterSquirrel | ID 208 | Energy 900 | LOC: X 44 | LOC: Y 48 and Wall | ID 190 | Energy -10 | LOC: X 44 | LOC: Y 49</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:23.414065100Z</date>
+  <millis>1528812023414</millis>
+  <nanos>65100</nanos>
+  <sequence>58</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@618184a9</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:23.415737700Z</date>
+  <millis>1528812023415</millis>
+  <nanos>737700</nanos>
+  <sequence>59</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@46441de2</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:23.417693200Z</date>
+  <millis>1528812023417</millis>
+  <nanos>693200</nanos>
+  <sequence>60</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@dd063c6</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:23.419191900Z</date>
+  <millis>1528812023419</millis>
+  <nanos>191900</nanos>
+  <sequence>61</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@f738d4b</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:23.421516600Z</date>
+  <millis>1528812023421</millis>
+  <nanos>516600</nanos>
+  <sequence>62</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@623af4c0</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:23.423041400Z</date>
+  <millis>1528812023423</millis>
+  <nanos>41400</nanos>
+  <sequence>63</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@4775e68</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:23.927884700Z</date>
+  <millis>1528812023927</millis>
+  <nanos>884700</nanos>
+  <sequence>64</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@a37d373</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:23.930886Z</date>
+  <millis>1528812023930</millis>
+  <nanos>886000</nanos>
+  <sequence>65</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
+  <method>collide</method>
+  <thread>19</thread>
+  <message>Collision Between:MasterSquirrel | ID 208 | Energy 890 | LOC: X 44 | LOC: Y 48 and Wall | ID 190 | Energy -10 | LOC: X 44 | LOC: Y 49</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:23.931893700Z</date>
+  <millis>1528812023931</millis>
+  <nanos>893700</nanos>
+  <sequence>66</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@193d1eab</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:23.934067100Z</date>
+  <millis>1528812023934</millis>
+  <nanos>67100</nanos>
+  <sequence>67</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
+  <method>collide</method>
+  <thread>19</thread>
+  <message>Collision Between:MasterSquirrel | ID 208 | Energy 880 | LOC: X 44 | LOC: Y 48 and Wall | ID 190 | Energy -10 | LOC: X 44 | LOC: Y 49</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:23.934877700Z</date>
+  <millis>1528812023934</millis>
+  <nanos>877700</nanos>
+  <sequence>68</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@2c1475b8</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:23.936874900Z</date>
+  <millis>1528812023936</millis>
+  <nanos>874900</nanos>
+  <sequence>69</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@12aefa4c</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:23.937878700Z</date>
+  <millis>1528812023937</millis>
+  <nanos>878700</nanos>
+  <sequence>70</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@26b60f21</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:23.940225900Z</date>
+  <millis>1528812023940</millis>
+  <nanos>225900</nanos>
+  <sequence>71</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@578f851a</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:23.941996500Z</date>
+  <millis>1528812023941</millis>
+  <nanos>996500</nanos>
+  <sequence>72</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@583993e6</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:23.943883500Z</date>
+  <millis>1528812023943</millis>
+  <nanos>883500</nanos>
+  <sequence>73</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@3da06e37</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:24.448840500Z</date>
+  <millis>1528812024448</millis>
+  <nanos>840500</nanos>
+  <sequence>74</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@2bf9a1a5</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:24.450623600Z</date>
+  <millis>1528812024450</millis>
+  <nanos>623600</nanos>
+  <sequence>75</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
+  <method>collide</method>
+  <thread>19</thread>
+  <message>Collision Between:MasterSquirrel | ID 208 | Energy 870 | LOC: X 44 | LOC: Y 48 and Wall | ID 190 | Energy -10 | LOC: X 44 | LOC: Y 49</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:24.451625900Z</date>
+  <millis>1528812024451</millis>
+  <nanos>625900</nanos>
+  <sequence>76</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@f54695</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:24.453047700Z</date>
+  <millis>1528812024453</millis>
+  <nanos>47700</nanos>
+  <sequence>77</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
+  <method>collide</method>
+  <thread>19</thread>
+  <message>Collision Between:MasterSquirrel | ID 208 | Energy 860 | LOC: X 44 | LOC: Y 48 and Wall | ID 190 | Energy -10 | LOC: X 44 | LOC: Y 49</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:24.453626900Z</date>
+  <millis>1528812024453</millis>
+  <nanos>626900</nanos>
+  <sequence>78</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@144743ce</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:24.456406900Z</date>
+  <millis>1528812024456</millis>
+  <nanos>406900</nanos>
+  <sequence>79</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@2aa846a7</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:24.458130200Z</date>
+  <millis>1528812024458</millis>
+  <nanos>130200</nanos>
+  <sequence>80</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@4c3a3ede</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:24.458627Z</date>
+  <millis>1528812024458</millis>
+  <nanos>627000</nanos>
+  <sequence>81</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@66511822</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:24.460744600Z</date>
+  <millis>1528812024460</millis>
+  <nanos>744600</nanos>
+  <sequence>82</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@48266e15</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:24.461630600Z</date>
+  <millis>1528812024461</millis>
+  <nanos>630600</nanos>
+  <sequence>83</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@20d394c8</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:24.966764100Z</date>
+  <millis>1528812024966</millis>
+  <nanos>764100</nanos>
+  <sequence>84</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@3d8282c2</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:24.968933400Z</date>
+  <millis>1528812024968</millis>
+  <nanos>933400</nanos>
+  <sequence>85</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
+  <method>collide</method>
+  <thread>19</thread>
+  <message>Collision Between:MasterSquirrel | ID 208 | Energy 850 | LOC: X 44 | LOC: Y 48 and Wall | ID 190 | Energy -10 | LOC: X 44 | LOC: Y 49</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:24.970771800Z</date>
+  <millis>1528812024970</millis>
+  <nanos>771800</nanos>
+  <sequence>86</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@537c1d58</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:24.971779400Z</date>
+  <millis>1528812024971</millis>
+  <nanos>779400</nanos>
+  <sequence>87</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
+  <method>collide</method>
+  <thread>19</thread>
+  <message>Collision Between:MasterSquirrel | ID 208 | Energy 840 | LOC: X 44 | LOC: Y 48 and Wall | ID 190 | Energy -10 | LOC: X 44 | LOC: Y 49</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:24.972774500Z</date>
+  <millis>1528812024972</millis>
+  <nanos>774500</nanos>
+  <sequence>88</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@28d187e4</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:24.973874800Z</date>
+  <millis>1528812024973</millis>
+  <nanos>874800</nanos>
+  <sequence>89</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@149833e2</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:24.976139200Z</date>
+  <millis>1528812024976</millis>
+  <nanos>139200</nanos>
+  <sequence>90</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@3d252721</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:24.977875600Z</date>
+  <millis>1528812024977</millis>
+  <nanos>875600</nanos>
+  <sequence>91</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@e007b00</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:24.979563300Z</date>
+  <millis>1528812024979</millis>
+  <nanos>563300</nanos>
+  <sequence>92</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@2aca3383</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:24.980755200Z</date>
+  <millis>1528812024980</millis>
+  <nanos>755200</nanos>
+  <sequence>93</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@7f98121b</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:25.482883900Z</date>
+  <millis>1528812025482</millis>
+  <nanos>883900</nanos>
+  <sequence>94</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@6b102ee6</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:25.484877200Z</date>
+  <millis>1528812025484</millis>
+  <nanos>877200</nanos>
+  <sequence>95</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
+  <method>collide</method>
+  <thread>19</thread>
+  <message>Collision Between:MasterSquirrel | ID 208 | Energy 830 | LOC: X 44 | LOC: Y 48 and Wall | ID 190 | Energy -10 | LOC: X 44 | LOC: Y 49</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:25.486892400Z</date>
+  <millis>1528812025486</millis>
+  <nanos>892400</nanos>
+  <sequence>96</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@66c590ff</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:25.487956400Z</date>
+  <millis>1528812025487</millis>
+  <nanos>956400</nanos>
+  <sequence>97</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
+  <method>collide</method>
+  <thread>19</thread>
+  <message>Collision Between:MasterSquirrel | ID 208 | Energy 820 | LOC: X 44 | LOC: Y 48 and Wall | ID 190 | Energy -10 | LOC: X 44 | LOC: Y 49</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:25.488892500Z</date>
+  <millis>1528812025488</millis>
+  <nanos>892500</nanos>
+  <sequence>98</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@1de8f18f</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:25.489890100Z</date>
+  <millis>1528812025489</millis>
+  <nanos>890100</nanos>
+  <sequence>99</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@225f20e3</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:25.490890700Z</date>
+  <millis>1528812025490</millis>
+  <nanos>890700</nanos>
+  <sequence>100</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@48525d50</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:25.492777700Z</date>
+  <millis>1528812025492</millis>
+  <nanos>777700</nanos>
+  <sequence>101</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@2da7ecd</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:25.493878700Z</date>
+  <millis>1528812025493</millis>
+  <nanos>878700</nanos>
+  <sequence>102</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
+  <method>collide</method>
+  <thread>19</thread>
+  <message>Collision Between:MasterSquirrel | ID 210 | Energy 1000 | LOC: X 8 | LOC: Y 48 and Wall | ID 154 | Energy -10 | LOC: X 8 | LOC: Y 49</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:25.494875800Z</date>
+  <millis>1528812025494</millis>
+  <nanos>875800</nanos>
+  <sequence>103</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@58648390</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:25.496874600Z</date>
+  <millis>1528812025496</millis>
+  <nanos>874600</nanos>
+  <sequence>104</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@3e7e847</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:25.998650800Z</date>
+  <millis>1528812025998</millis>
+  <nanos>650800</nanos>
+  <sequence>105</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@59859db6</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:26.000897400Z</date>
+  <millis>1528812026000</millis>
+  <nanos>897400</nanos>
+  <sequence>106</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
+  <method>collide</method>
+  <thread>19</thread>
+  <message>Collision Between:MasterSquirrel | ID 208 | Energy 810 | LOC: X 44 | LOC: Y 48 and Wall | ID 190 | Energy -10 | LOC: X 44 | LOC: Y 49</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:26.002677300Z</date>
+  <millis>1528812026002</millis>
+  <nanos>677300</nanos>
+  <sequence>107</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@8f8ac5d</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:26.003799600Z</date>
+  <millis>1528812026003</millis>
+  <nanos>799600</nanos>
+  <sequence>108</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
+  <method>collide</method>
+  <thread>19</thread>
+  <message>Collision Between:MasterSquirrel | ID 208 | Energy 800 | LOC: X 44 | LOC: Y 48 and Wall | ID 190 | Energy -10 | LOC: X 44 | LOC: Y 49</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:26.004689700Z</date>
+  <millis>1528812026004</millis>
+  <nanos>689700</nanos>
+  <sequence>109</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@74fcd6d1</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:26.005729400Z</date>
+  <millis>1528812026005</millis>
+  <nanos>729400</nanos>
+  <sequence>110</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@48e5add9</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:26.007680100Z</date>
+  <millis>1528812026007</millis>
+  <nanos>680100</nanos>
+  <sequence>111</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@3df8f15e</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:26.008680300Z</date>
+  <millis>1528812026008</millis>
+  <nanos>680300</nanos>
+  <sequence>112</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
+  <method>collide</method>
+  <thread>19</thread>
+  <message>Collision Between:MasterSquirrel | ID 210 | Energy 990 | LOC: X 8 | LOC: Y 48 and Wall | ID 154 | Energy -10 | LOC: X 8 | LOC: Y 49</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:26.010679900Z</date>
+  <millis>1528812026010</millis>
+  <nanos>679900</nanos>
+  <sequence>113</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@70af38f8</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:26.011845400Z</date>
+  <millis>1528812026011</millis>
+  <nanos>845400</nanos>
+  <sequence>114</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
+  <method>collide</method>
+  <thread>19</thread>
+  <message>Collision Between:MasterSquirrel | ID 210 | Energy 980 | LOC: X 8 | LOC: Y 48 and Wall | ID 154 | Energy -10 | LOC: X 8 | LOC: Y 49</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:26.013801300Z</date>
+  <millis>1528812026013</millis>
+  <nanos>801300</nanos>
+  <sequence>115</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@62772262</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:26.014678800Z</date>
+  <millis>1528812026014</millis>
+  <nanos>678800</nanos>
+  <sequence>116</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@719d090</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:26.022470200Z</date>
+  <millis>1528812026022</millis>
+  <nanos>470200</nanos>
+  <sequence>117</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
+  <method>collide</method>
+  <thread>22</thread>
+  <message>Collision Between:HandOperatedMasterSquirrel | ID 420 | Energy 100 | LOC: X 37 | LOC: Y 1 and Wall | ID 249 | Energy -10 | LOC: X 37 | LOC: Y 0</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:26.516908100Z</date>
+  <millis>1528812026516</millis>
+  <nanos>908100</nanos>
+  <sequence>118</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@7d11a32c</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:26.519608200Z</date>
+  <millis>1528812026519</millis>
+  <nanos>608200</nanos>
+  <sequence>119</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
+  <method>collide</method>
+  <thread>19</thread>
+  <message>Collision Between:MasterSquirrel | ID 208 | Energy 790 | LOC: X 44 | LOC: Y 48 and Wall | ID 190 | Energy -10 | LOC: X 44 | LOC: Y 49</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:26.520932300Z</date>
+  <millis>1528812026520</millis>
+  <nanos>932300</nanos>
+  <sequence>120</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@74703c8e</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:26.521930Z</date>
+  <millis>1528812026521</millis>
+  <nanos>930000</nanos>
+  <sequence>121</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
+  <method>collide</method>
+  <thread>19</thread>
+  <message>Collision Between:MasterSquirrel | ID 208 | Energy 780 | LOC: X 44 | LOC: Y 48 and Wall | ID 190 | Energy -10 | LOC: X 44 | LOC: Y 49</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:26.522932300Z</date>
+  <millis>1528812026522</millis>
+  <nanos>932300</nanos>
+  <sequence>122</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@2f4f6450</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:26.523932600Z</date>
+  <millis>1528812026523</millis>
+  <nanos>932600</nanos>
+  <sequence>123</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
+  <method>collide</method>
+  <thread>22</thread>
+  <message>Collision Between:HandOperatedMasterSquirrel | ID 420 | Energy 90 | LOC: X 37 | LOC: Y 1 and Wall | ID 249 | Energy -10 | LOC: X 37 | LOC: Y 0</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:26.526934Z</date>
+  <millis>1528812026526</millis>
+  <nanos>934000</nanos>
+  <sequence>124</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@661bac79</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:26.528241500Z</date>
+  <millis>1528812026528</millis>
+  <nanos>241500</nanos>
+  <sequence>125</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@16e37b55</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:26.529931800Z</date>
+  <millis>1528812026529</millis>
+  <nanos>931800</nanos>
+  <sequence>126</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
+  <method>collide</method>
+  <thread>19</thread>
+  <message>Collision Between:MasterSquirrel | ID 210 | Energy 970 | LOC: X 8 | LOC: Y 48 and Wall | ID 154 | Energy -10 | LOC: X 8 | LOC: Y 49</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:26.531932200Z</date>
+  <millis>1528812026531</millis>
+  <nanos>932200</nanos>
+  <sequence>127</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@6382a14b</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:26.533934100Z</date>
+  <millis>1528812026533</millis>
+  <nanos>934100</nanos>
+  <sequence>128</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
+  <method>collide</method>
+  <thread>19</thread>
+  <message>Collision Between:MasterSquirrel | ID 210 | Energy 960 | LOC: X 8 | LOC: Y 48 and Wall | ID 154 | Energy -10 | LOC: X 8 | LOC: Y 49</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:26.535938100Z</date>
+  <millis>1528812026535</millis>
+  <nanos>938100</nanos>
+  <sequence>129</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@37bb348f</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:26.537934600Z</date>
+  <millis>1528812026537</millis>
+  <nanos>934600</nanos>
+  <sequence>130</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@cf83e65</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:27.027435500Z</date>
+  <millis>1528812027027</millis>
+  <nanos>435500</nanos>
+  <sequence>131</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
+  <method>collide</method>
+  <thread>22</thread>
+  <message>Collision Between:HandOperatedMasterSquirrel | ID 420 | Energy 80 | LOC: X 37 | LOC: Y 1 and Wall | ID 249 | Energy -10 | LOC: X 37 | LOC: Y 0</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:27.040224100Z</date>
+  <millis>1528812027040</millis>
+  <nanos>224100</nanos>
+  <sequence>132</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@1ccc57c</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:27.042094100Z</date>
+  <millis>1528812027042</millis>
+  <nanos>94100</nanos>
+  <sequence>133</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
+  <method>collide</method>
+  <thread>19</thread>
+  <message>Collision Between:MasterSquirrel | ID 208 | Energy 770 | LOC: X 44 | LOC: Y 48 and Wall | ID 190 | Energy -10 | LOC: X 44 | LOC: Y 49</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:27.043091300Z</date>
+  <millis>1528812027043</millis>
+  <nanos>91300</nanos>
+  <sequence>134</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@77b2a4f7</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:27.044184700Z</date>
+  <millis>1528812027044</millis>
+  <nanos>184700</nanos>
+  <sequence>135</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
+  <method>collide</method>
+  <thread>19</thread>
+  <message>Collision Between:MasterSquirrel | ID 208 | Energy 760 | LOC: X 44 | LOC: Y 48 and Wall | ID 190 | Energy -10 | LOC: X 44 | LOC: Y 49</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:27.045086900Z</date>
+  <millis>1528812027045</millis>
+  <nanos>86900</nanos>
+  <sequence>136</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@19c3f9c2</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:27.046080200Z</date>
+  <millis>1528812027046</millis>
+  <nanos>80200</nanos>
+  <sequence>137</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@5485e789</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:27.047078800Z</date>
+  <millis>1528812027047</millis>
+  <nanos>78800</nanos>
+  <sequence>138</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@33852f40</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:27.048080300Z</date>
+  <millis>1528812027048</millis>
+  <nanos>80300</nanos>
+  <sequence>139</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
+  <method>collide</method>
+  <thread>19</thread>
+  <message>Collision Between:MasterSquirrel | ID 210 | Energy 950 | LOC: X 8 | LOC: Y 48 and Wall | ID 154 | Energy -10 | LOC: X 8 | LOC: Y 49</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:27.049079700Z</date>
+  <millis>1528812027049</millis>
+  <nanos>79700</nanos>
+  <sequence>140</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@51f2b0db</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:27.050084200Z</date>
+  <millis>1528812027050</millis>
+  <nanos>84200</nanos>
+  <sequence>141</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
+  <method>collide</method>
+  <thread>19</thread>
+  <message>Collision Between:MasterSquirrel | ID 210 | Energy 940 | LOC: X 8 | LOC: Y 48 and Wall | ID 154 | Energy -10 | LOC: X 8 | LOC: Y 49</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:27.051087400Z</date>
+  <millis>1528812027051</millis>
+  <nanos>87400</nanos>
+  <sequence>142</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@57f95ece</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:27.052598600Z</date>
+  <millis>1528812027052</millis>
+  <nanos>598600</nanos>
+  <sequence>143</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@2c3b4217</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:27.529418200Z</date>
+  <millis>1528812027529</millis>
+  <nanos>418200</nanos>
+  <sequence>144</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
+  <method>collide</method>
+  <thread>22</thread>
+  <message>Collision Between:HandOperatedMasterSquirrel | ID 420 | Energy 70 | LOC: X 37 | LOC: Y 1 and Wall | ID 249 | Energy -10 | LOC: X 37 | LOC: Y 0</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:27.554649600Z</date>
+  <millis>1528812027554</millis>
+  <nanos>649600</nanos>
+  <sequence>145</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@365e97ff</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:27.556786800Z</date>
+  <millis>1528812027556</millis>
+  <nanos>786800</nanos>
+  <sequence>146</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
+  <method>collide</method>
+  <thread>19</thread>
+  <message>Collision Between:MasterSquirrel | ID 208 | Energy 750 | LOC: X 44 | LOC: Y 48 and Wall | ID 190 | Energy -10 | LOC: X 44 | LOC: Y 49</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:27.557686800Z</date>
+  <millis>1528812027557</millis>
+  <nanos>686800</nanos>
+  <sequence>147</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@72ee9d87</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:27.558690500Z</date>
+  <millis>1528812027558</millis>
+  <nanos>690500</nanos>
+  <sequence>148</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
+  <method>collide</method>
+  <thread>19</thread>
+  <message>Collision Between:MasterSquirrel | ID 208 | Energy 740 | LOC: X 44 | LOC: Y 48 and Wall | ID 190 | Energy -10 | LOC: X 44 | LOC: Y 49</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:27.559688400Z</date>
+  <millis>1528812027559</millis>
+  <nanos>688400</nanos>
+  <sequence>149</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@6f7cb23a</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:27.560685800Z</date>
+  <millis>1528812027560</millis>
+  <nanos>685800</nanos>
+  <sequence>150</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@19a17e38</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:27.561686400Z</date>
+  <millis>1528812027561</millis>
+  <nanos>686400</nanos>
+  <sequence>151</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@5b02f39c</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:27.562689700Z</date>
+  <millis>1528812027562</millis>
+  <nanos>689700</nanos>
+  <sequence>152</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
+  <method>collide</method>
+  <thread>19</thread>
+  <message>Collision Between:MasterSquirrel | ID 210 | Energy 930 | LOC: X 8 | LOC: Y 48 and Wall | ID 154 | Energy -10 | LOC: X 8 | LOC: Y 49</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:27.563687700Z</date>
+  <millis>1528812027563</millis>
+  <nanos>687700</nanos>
+  <sequence>153</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@5d065fde</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:27.564688900Z</date>
+  <millis>1528812027564</millis>
+  <nanos>688900</nanos>
+  <sequence>154</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.core.FlattenedBoard</class>
+  <method>collide</method>
+  <thread>19</thread>
+  <message>Collision Between:MasterSquirrel | ID 210 | Energy 920 | LOC: X 8 | LOC: Y 48 and Wall | ID 154 | Energy -10 | LOC: X 8 | LOC: Y 49</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:27.565691100Z</date>
+  <millis>1528812027565</millis>
+  <nanos>691100</nanos>
+  <sequence>155</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@57e1db26</message>
+</record>
+<record>
+  <date>2018-06-12T14:00:27.566689100Z</date>
+  <millis>1528812027566</millis>
+  <nanos>689100</nanos>
+  <sequence>156</sequence>
+  <logger>de.hsa.games.fatsquirrel.core.Launcher</logger>
+  <level>INFO</level>
+  <class>de.hsa.games.fatsquirrel.proxies.BotInvocationHandler</class>
+  <method>invoke</method>
+  <thread>19</thread>
+  <message>Method called: public abstract void de.hsa.games.fatsquirrel.botapi.BotController.nextStep(de.hsa.games.fatsquirrel.botapi.ControllerContext) with params:  de.hsa.games.fatsquirrel.core.MasterSquirrelBot$ControllerContextImpl@45a33f5c</message>
 </record>
 </log>

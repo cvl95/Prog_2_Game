@@ -88,9 +88,7 @@ public class FxUI extends Scene implements UI, ActionListener {
 			for (int j = 0; j < viewSize.getY(); j++) {
 				XY currPos = new XY(i, j);
 				EntityType et = view.getEntityType(currPos);
-				if (et != null)
-					System.out.println("FXui:  " + et.toString());
-					
+				
 				Color color = Color.WHITE;
 				switch (et) {
 				case BadBeast:

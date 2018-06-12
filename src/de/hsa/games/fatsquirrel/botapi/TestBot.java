@@ -14,9 +14,7 @@ public class TestBot implements BotController {
 	
 	public void nextStep(ControllerContext view) {
 		
-		//TODO: Logik für Bot einstellen
-		System.out.println("nextStep Testbot");
-		System.out.println(view.getEnergy());
+
 		view.move(XY.DOWN);
 		
 	}
